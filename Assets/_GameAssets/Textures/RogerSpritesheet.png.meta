@@ -1,0 +1,4428 @@
+fileFormatVersion: 2
+guid: 0064ec2f9148fdc48b36b90e3c3a2565
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1949645472881905670
+    second: RogerSpritesheet_0
+  - first:
+      213: -4557620402570728610
+    second: RogerSpritesheet_1
+  - first:
+      213: 104999721977932805
+    second: RogerSpritesheet_2
+  - first:
+      213: -3125836137454202754
+    second: RogerSpritesheet_3
+  - first:
+      213: -3759101358940969310
+    second: RogerSpritesheet_4
+  - first:
+      213: -5724961094620762581
+    second: RogerSpritesheet_5
+  - first:
+      213: 3537497280482276439
+    second: RogerSpritesheet_6
+  - first:
+      213: -7851693159752019690
+    second: RogerSpritesheet_7
+  - first:
+      213: 4740388465273872890
+    second: RogerSpritesheet_8
+  - first:
+      213: 7258101179623478280
+    second: RogerSpritesheet_9
+  - first:
+      213: 4700339612172748350
+    second: RogerSpritesheet_10
+  - first:
+      213: -5190829747235374346
+    second: RogerSpritesheet_11
+  - first:
+      213: -4735167476430478385
+    second: RogerSpritesheet_12
+  - first:
+      213: -8669387943747059384
+    second: RogerSpritesheet_13
+  - first:
+      213: -4546460776757903888
+    second: RogerSpritesheet_14
+  - first:
+      213: 1049759214204872337
+    second: RogerSpritesheet_15
+  - first:
+      213: 1980535757053523547
+    second: RogerSpritesheet_16
+  - first:
+      213: 3560591920140002964
+    second: RogerSpritesheet_17
+  - first:
+      213: -6528599921274686977
+    second: RogerSpritesheet_18
+  - first:
+      213: 3107985433239789565
+    second: RogerSpritesheet_19
+  - first:
+      213: 4316252360135667349
+    second: RogerSpritesheet_20
+  - first:
+      213: 8414107105388961339
+    second: RogerSpritesheet_21
+  - first:
+      213: 3797786065260382212
+    second: RogerSpritesheet_22
+  - first:
+      213: -5169324323542377667
+    second: RogerSpritesheet_23
+  - first:
+      213: 3368400943110950353
+    second: RogerSpritesheet_24
+  - first:
+      213: 1366927097896118302
+    second: RogerSpritesheet_25
+  - first:
+      213: 3653336467598750002
+    second: RogerSpritesheet_26
+  - first:
+      213: 7105891220633295167
+    second: RogerSpritesheet_27
+  - first:
+      213: -6874467230461401060
+    second: RogerSpritesheet_28
+  - first:
+      213: 4838539962597310531
+    second: RogerSpritesheet_29
+  - first:
+      213: 3576533518145917635
+    second: RogerSpritesheet_30
+  - first:
+      213: 2230292416811317245
+    second: RogerSpritesheet_31
+  - first:
+      213: 4112366696184915502
+    second: RogerSpritesheet_32
+  - first:
+      213: -727384509717117572
+    second: RogerSpritesheet_33
+  - first:
+      213: 6277762337930134103
+    second: RogerSpritesheet_34
+  - first:
+      213: -693000824633585201
+    second: RogerSpritesheet_35
+  - first:
+      213: 4255784683413389958
+    second: RogerSpritesheet_36
+  - first:
+      213: -2517405032908799414
+    second: RogerSpritesheet_37
+  - first:
+      213: -2790519364681157885
+    second: RogerSpritesheet_38
+  - first:
+      213: -2342037582339192246
+    second: RogerSpritesheet_39
+  - first:
+      213: -8392738860111578638
+    second: RogerSpritesheet_40
+  - first:
+      213: -4312609286490099601
+    second: RogerSpritesheet_41
+  - first:
+      213: 4708507863932034343
+    second: RogerSpritesheet_42
+  - first:
+      213: 3339481135201116009
+    second: RogerSpritesheet_43
+  - first:
+      213: -4555388034716711684
+    second: RogerSpritesheet_44
+  - first:
+      213: 1610762925182439369
+    second: RogerSpritesheet_45
+  - first:
+      213: 2507145629048603012
+    second: RogerSpritesheet_46
+  - first:
+      213: 1520736592188780136
+    second: RogerSpritesheet_47
+  - first:
+      213: 5050386138542301568
+    second: RogerSpritesheet_48
+  - first:
+      213: -8128061474348287198
+    second: RogerSpritesheet_49
+  - first:
+      213: -5411451314894178896
+    second: RogerSpritesheet_50
+  - first:
+      213: -6978562223565708022
+    second: RogerSpritesheet_51
+  - first:
+      213: -8662591339005615220
+    second: RogerSpritesheet_52
+  - first:
+      213: 8478311959896643094
+    second: RogerSpritesheet_53
+  - first:
+      213: 8332986162279994460
+    second: RogerSpritesheet_54
+  - first:
+      213: 8415700893843770068
+    second: RogerSpritesheet_55
+  - first:
+      213: -7690999962663026372
+    second: RogerSpritesheet_56
+  - first:
+      213: -3308535455114099377
+    second: RogerSpritesheet_57
+  - first:
+      213: -1543746292736969085
+    second: RogerSpritesheet_58
+  - first:
+      213: 7997906514680499869
+    second: RogerSpritesheet_59
+  - first:
+      213: 2798157452078110348
+    second: RogerSpritesheet_60
+  - first:
+      213: 1206740801927012701
+    second: RogerSpritesheet_61
+  - first:
+      213: -3820393116567110752
+    second: RogerSpritesheet_62
+  - first:
+      213: -1858846760543619204
+    second: RogerSpritesheet_63
+  - first:
+      213: 3297209528771168111
+    second: RogerSpritesheet_64
+  - first:
+      213: 4574730449819539176
+    second: RogerSpritesheet_65
+  - first:
+      213: -3229521259114439725
+    second: RogerSpritesheet_66
+  - first:
+      213: 3385983540248024235
+    second: RogerSpritesheet_67
+  - first:
+      213: -7747508451134393988
+    second: RogerSpritesheet_68
+  - first:
+      213: -5642764448122037491
+    second: RogerSpritesheet_69
+  - first:
+      213: 5552199485393320292
+    second: RogerSpritesheet_70
+  - first:
+      213: 3027782620483342130
+    second: RogerSpritesheet_71
+  - first:
+      213: -2046657273124722274
+    second: RogerSpritesheet_72
+  - first:
+      213: 7401214373716605649
+    second: RogerSpritesheet_73
+  - first:
+      213: 2128373554592296494
+    second: RogerSpritesheet_74
+  - first:
+      213: -7743595873732872326
+    second: RogerSpritesheet_75
+  - first:
+      213: -5782832178349558144
+    second: RogerSpritesheet_76
+  - first:
+      213: -102671425002103728
+    second: RogerSpritesheet_77
+  - first:
+      213: -4086149435867912137
+    second: RogerSpritesheet_78
+  - first:
+      213: 3970175863667397274
+    second: RogerSpritesheet_79
+  - first:
+      213: -3591221498044566288
+    second: RogerSpritesheet_80
+  - first:
+      213: -8834651645661308958
+    second: RogerSpritesheet_81
+  - first:
+      213: 2339117864785606216
+    second: RogerSpritesheet_82
+  - first:
+      213: -5128455226232211518
+    second: RogerSpritesheet_83
+  - first:
+      213: -6682157882524001368
+    second: RogerSpritesheet_84
+  - first:
+      213: 2077773477162121438
+    second: RogerSpritesheet_85
+  - first:
+      213: 6248045063756440232
+    second: RogerSpritesheet_86
+  - first:
+      213: 5713408742261425277
+    second: RogerSpritesheet_87
+  - first:
+      213: -1416674571613978590
+    second: RogerSpritesheet_88
+  - first:
+      213: -6922715898532628980
+    second: RogerSpritesheet_89
+  - first:
+      213: -3387432466398279048
+    second: RogerSpritesheet_90
+  - first:
+      213: 4815660921886595155
+    second: RogerSpritesheet_91
+  - first:
+      213: 8301213116561273413
+    second: RogerSpritesheet_92
+  - first:
+      213: 7653548178554521809
+    second: RogerSpritesheet_93
+  - first:
+      213: 3916174946099742437
+    second: RogerSpritesheet_94
+  - first:
+      213: 2988430222714257513
+    second: RogerSpritesheet_95
+  - first:
+      213: 5696152585925126830
+    second: RogerSpritesheet_96
+  - first:
+      213: -503456642848225147
+    second: RogerSpritesheet_97
+  - first:
+      213: 147762560584108602
+    second: RogerSpritesheet_98
+  - first:
+      213: 861486292143103646
+    second: RogerSpritesheet_99
+  - first:
+      213: 4387220351173471793
+    second: RogerSpritesheet_100
+  - first:
+      213: -7195957377650829924
+    second: RogerSpritesheet_101
+  - first:
+      213: 1495608980267365137
+    second: RogerSpritesheet_102
+  - first:
+      213: -8839478857826378173
+    second: RogerSpritesheet_103
+  - first:
+      213: 3370790747304163018
+    second: RogerSpritesheet_104
+  - first:
+      213: 4320610883261044403
+    second: RogerSpritesheet_105
+  - first:
+      213: 5609524848477039590
+    second: RogerSpritesheet_106
+  - first:
+      213: 3252818865471252054
+    second: RogerSpritesheet_107
+  - first:
+      213: -5166590146115275683
+    second: RogerSpritesheet_108
+  - first:
+      213: 1053800823587775597
+    second: RogerSpritesheet_109
+  - first:
+      213: -954709008266771782
+    second: RogerSpritesheet_110
+  - first:
+      213: 9182157671152447807
+    second: RogerSpritesheet_111
+  - first:
+      213: -972091141523903921
+    second: RogerSpritesheet_112
+  - first:
+      213: -5203775012127117995
+    second: RogerSpritesheet_113
+  - first:
+      213: -196917310780008923
+    second: RogerSpritesheet_114
+  - first:
+      213: -1517292044018583346
+    second: RogerSpritesheet_115
+  - first:
+      213: 8199535387106625784
+    second: RogerSpritesheet_116
+  - first:
+      213: 7332093805762586735
+    second: RogerSpritesheet_117
+  - first:
+      213: -5256808517079863403
+    second: RogerSpritesheet_118
+  - first:
+      213: -2649530298037810094
+    second: RogerSpritesheet_119
+  - first:
+      213: 7285345672207445107
+    second: RogerSpritesheet_120
+  - first:
+      213: -1652149464032846609
+    second: RogerSpritesheet_121
+  - first:
+      213: 7578947654287832217
+    second: RogerSpritesheet_122
+  - first:
+      213: -1166374408045135792
+    second: RogerSpritesheet_123
+  - first:
+      213: -7970234018146915426
+    second: RogerSpritesheet_124
+  - first:
+      213: 6714854208410942969
+    second: RogerSpritesheet_125
+  - first:
+      213: -5019614188307746001
+    second: RogerSpritesheet_126
+  - first:
+      213: 7548824206722625123
+    second: RogerSpritesheet_127
+  - first:
+      213: -2800670479603474892
+    second: RogerSpritesheet_128
+  - first:
+      213: -2353170344396085989
+    second: RogerSpritesheet_129
+  - first:
+      213: 2717348547721526520
+    second: RogerSpritesheet_130
+  - first:
+      213: 734603530276315616
+    second: RogerSpritesheet_131
+  - first:
+      213: -2098755301959786819
+    second: RogerSpritesheet_132
+  - first:
+      213: -3527445429926057480
+    second: RogerSpritesheet_133
+  - first:
+      213: -3042049909318538072
+    second: RogerSpritesheet_134
+  - first:
+      213: 2085340098086650510
+    second: RogerSpritesheet_135
+  - first:
+      213: 362143070068640913
+    second: RogerSpritesheet_136
+  - first:
+      213: 6245898425769026277
+    second: RogerSpritesheet_137
+  - first:
+      213: 7603629293679172751
+    second: RogerSpritesheet_138
+  - first:
+      213: 5178611350169842801
+    second: RogerSpritesheet_139
+  - first:
+      213: 1144734226740112166
+    second: RogerSpritesheet_140
+  - first:
+      213: -1588239227649098193
+    second: RogerSpritesheet_141
+  - first:
+      213: -8056358604269440525
+    second: RogerSpritesheet_142
+  - first:
+      213: -3839060762164169156
+    second: RogerSpritesheet_143
+  - first:
+      213: -3893398673853169406
+    second: RogerSpritesheet_144
+  - first:
+      213: 8755468747848386376
+    second: RogerSpritesheet_145
+  - first:
+      213: -9063107906939719528
+    second: RogerSpritesheet_146
+  - first:
+      213: -8043774158069985612
+    second: RogerSpritesheet_147
+  - first:
+      213: 7444031702024580437
+    second: RogerSpritesheet_148
+  - first:
+      213: 6862552503172836804
+    second: RogerSpritesheet_149
+  - first:
+      213: -3213928525194775249
+    second: RogerSpritesheet_150
+  - first:
+      213: -7232074748287060647
+    second: RogerSpritesheet_151
+  - first:
+      213: 2607349441901725620
+    second: RogerSpritesheet_152
+  - first:
+      213: -1351925224724927417
+    second: RogerSpritesheet_153
+  - first:
+      213: -3192486513217756157
+    second: RogerSpritesheet_154
+  - first:
+      213: -1645952938600725004
+    second: RogerSpritesheet_155
+  - first:
+      213: -1401595254477246971
+    second: RogerSpritesheet_156
+  - first:
+      213: -2021082642297154539
+    second: RogerSpritesheet_157
+  - first:
+      213: 6573503467472756659
+    second: RogerSpritesheet_158
+  - first:
+      213: 5761594866576602167
+    second: RogerSpritesheet_159
+  - first:
+      213: -503707060996004041
+    second: RogerSpritesheet_160
+  - first:
+      213: 4382318943703268063
+    second: RogerSpritesheet_161
+  - first:
+      213: -5285052951891270252
+    second: RogerSpritesheet_162
+  - first:
+      213: 2105230582290866626
+    second: RogerSpritesheet_163
+  - first:
+      213: 8526851706408560513
+    second: RogerSpritesheet_164
+  - first:
+      213: 2028288118332864007
+    second: RogerSpritesheet_165
+  - first:
+      213: -2161585060146525534
+    second: RogerSpritesheet_166
+  - first:
+      213: -6114764153786643972
+    second: RogerSpritesheet_167
+  - first:
+      213: -682657954534973779
+    second: RogerSpritesheet_168
+  - first:
+      213: -5302628561516741861
+    second: RogerSpritesheet_169
+  - first:
+      213: 1126787051359606439
+    second: RogerSpritesheet_170
+  - first:
+      213: 699307678479144337
+    second: RogerSpritesheet_171
+  - first:
+      213: 968803009678339818
+    second: RogerSpritesheet_172
+  - first:
+      213: 1314189463338895874
+    second: RogerSpritesheet_173
+  - first:
+      213: -5284741348761331652
+    second: RogerSpritesheet_174
+  - first:
+      213: -4402999157907057067
+    second: RogerSpritesheet_175
+  - first:
+      213: -7057012395387149436
+    second: RogerSpritesheet_176
+  - first:
+      213: 1416569432123929011
+    second: RogerSpritesheet_177
+  - first:
+      213: -7829699990998426309
+    second: RogerSpritesheet_178
+  - first:
+      213: 5685632162937136509
+    second: RogerSpritesheet_179
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RogerSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affece6a5c771f4e0800000000000000
+      internalID: -1949645472881905670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 8400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5be2b3246410c0c0800000000000000
+      internalID: -4557620402570728610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 8400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c620ad0b8057100800000000000000
+      internalID: 104999721977932805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 8400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7096f8289cce94d0800000000000000
+      internalID: -3125836137454202754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 8400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6a2a90b3df4dbc0800000000000000
+      internalID: -3759101358940969310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 8400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ea232773adc80b0800000000000000
+      internalID: -5724961094620762581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 8400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7547e0db807b71130800000000000000
+      internalID: 3537497280482276439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 8400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611dd97dbae290390800000000000000
+      internalID: -7851693159752019690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 8400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1220a813e39c140800000000000000
+      internalID: 4740388465273872890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 8400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8041d4b5194f9b460800000000000000
+      internalID: 7258101179623478280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 8400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36014b49f5fa3140800000000000000
+      internalID: 4700339612172748350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 8400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa318ad8d776f7b0800000000000000
+      internalID: -5190829747235374346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3e067a44e494eb0800000000000000
+      internalID: -4735167476430478385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 7800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84107e8f89520b780800000000000000
+      internalID: -8669387943747059384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 7800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd3910030ab7e0c0800000000000000
+      internalID: -4546460776757903888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 7800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196ef56817e719e00800000000000000
+      internalID: 1049759214204872337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 7800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56722817c64c7b10800000000000000
+      internalID: 1980535757053523547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 7800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496221e8c73c96130800000000000000
+      internalID: 3560591920140002964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 7800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff177cb26f0c565a0800000000000000
+      internalID: -6528599921274686977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 7800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff9853e848c12b20800000000000000
+      internalID: 3107985433239789565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 7800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ee3de27a866eb30800000000000000
+      internalID: 4316252360135667349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 7800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e9cce15d9e4c470800000000000000
+      internalID: 8414107105388961339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 7800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40806c80e4274b430800000000000000
+      internalID: 3797786065260382212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 7800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b587e7aeed248b0800000000000000
+      internalID: -5169324323542377667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd083bafc6febe20800000000000000
+      internalID: 3368400943110950353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 7200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1824f704fc48f210800000000000000
+      internalID: 1366927097896118302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 7200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231343c392243b230800000000000000
+      internalID: 3653336467598750002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 7200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f391a62aa623d9260800000000000000
+      internalID: 7105891220633295167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 7200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18e844f97cf890a0800000000000000
+      internalID: -6874467230461401060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 7200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3400526d572f52340800000000000000
+      internalID: 4838539962597310531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 7200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c29d54194662a130800000000000000
+      internalID: 3576533518145917635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 7200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df73941f22793fe10800000000000000
+      internalID: 2230292416811317245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 7200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26af30d8bf021930800000000000000
+      internalID: 4112366696184915502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 7200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75803b64afc7e5f0800000000000000
+      internalID: -727384509717117572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 7200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752c6a8d5971f1750800000000000000
+      internalID: 6277762337930134103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 7200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc199a2fb67f166f0800000000000000
+      internalID: -693000824633585201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68247671f959f0b30800000000000000
+      internalID: 4255784683413389958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 6600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42c0b9d571601dd0800000000000000
+      internalID: -2517405032908799414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 6600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303b4513c651649d0800000000000000
+      internalID: -2790519364681157885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 6600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ace0e3a396f7fd0800000000000000
+      internalID: -2342037582339192246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 6600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9be6e2970078b80800000000000000
+      internalID: -8392738860111578638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 6600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60f4bff3b88624c0800000000000000
+      internalID: -4312609286490099601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 6600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d5dcb94faf75140800000000000000
+      internalID: 4708507863932034343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 6600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fd7cd2668385e20800000000000000
+      internalID: 3339481135201116009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 6600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf445a8c7b208c0c0800000000000000
+      internalID: -4555388034716711684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 6600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf4ed4a8549a5610800000000000000
+      internalID: 1610762925182439369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 6600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4818d9b8aab2bc220800000000000000
+      internalID: 2507145629048603012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 6600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ea9569fddba1510800000000000000
+      internalID: 1520736592188780136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081ee565f63961640800000000000000
+      internalID: 5050386138542301568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 6000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22bbee44723533f80800000000000000
+      internalID: -8128061474348287198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 6000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5796043b9a6e4b0800000000000000
+      internalID: -5411451314894178896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 6000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05e765b1aa272f90800000000000000
+      internalID: -6978562223565708022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 6000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83e134d21b48c780800000000000000
+      internalID: -8662591339005615220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 6000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 616d598bec309a570800000000000000
+      internalID: 8478311959896643094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 6000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54d1f8b3c6b4a370800000000000000
+      internalID: 8332986162279994460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 6000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dace79ef539ac470800000000000000
+      internalID: 8415700893843770068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 6000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c318de95844144590800000000000000
+      internalID: -7690999962663026372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 6000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45832f6888b512d0800000000000000
+      internalID: -3308535455114099377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 6000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38636160de2839ae0800000000000000
+      internalID: -1543746292736969085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 6000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e4052b9954efe60800000000000000
+      internalID: 7997906514680499869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c865abc906d05d620800000000000000
+      internalID: 2798157452078110348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 5400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5164d2ad543fb010800000000000000
+      internalID: 1206740801927012701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 5400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab7ba8a3bc3bfac0800000000000000
+      internalID: -3820393116567110752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 5400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7779e948bc0436e0800000000000000
+      internalID: -1858846760543619204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 5400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f674078d89a02cd20800000000000000
+      internalID: 3297209528771168111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 5400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e618ac2b15bc7f30800000000000000
+      internalID: 4574730449819539176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 5400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db59eb868f6e23d0800000000000000
+      internalID: -3229521259114439725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 5400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba49dc3171e6dfe20800000000000000
+      internalID: 3385983540248024235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 5400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c713ccb9c125b7490800000000000000
+      internalID: -7747508451134393988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 5400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b9b7e81afd0b1b0800000000000000
+      internalID: -5642764448122037491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 5400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469b9f0e3006d0d40800000000000000
+      internalID: 5552199485393320292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 5400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23fc20f5048d40a20800000000000000
+      internalID: 3027782620483342130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e996e62cd00d893e0800000000000000
+      internalID: -2046657273124722274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 4800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dab4e3724566b660800000000000000
+      internalID: 7401214373716605649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 4800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e2fc6a870898d10800000000000000
+      internalID: 2128373554592296494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_75
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 4800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77b8f58498398490800000000000000
+      internalID: -7743595873732872326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_76
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 4800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086b6c5c5c04fbfa0800000000000000
+      internalID: -5782832178349558144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_77
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 4800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c9a2802ec339ef0800000000000000
+      internalID: -102671425002103728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_78
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 4800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7382ee7ccb41b47c0800000000000000
+      internalID: -4086149435867912137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_79
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 4800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9299b1c9e5e81730800000000000000
+      internalID: 3970175863667397274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_80
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 4800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4be4b131b692ec0800000000000000
+      internalID: -3591221498044566288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_81
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 4800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e79902e223056580800000000000000
+      internalID: -8834651645661308958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_82
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 4800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846f05a0e47367020800000000000000
+      internalID: 2339117864785606216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_83
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 4800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7fee9b42114d8b0800000000000000
+      internalID: -5128455226232211518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab94173fc43443a0800000000000000
+      internalID: -6682157882524001368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_85
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 4200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8f9fd08fbb5dc10800000000000000
+      internalID: 2077773477162121438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_86
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 4200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2e5d5c1e385b650800000000000000
+      internalID: 6248045063756440232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_87
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 4200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d748a1beafa1a4f40800000000000000
+      internalID: 5713408742261425277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_88
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 4200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 220ce94abf5f65ce0800000000000000
+      internalID: -1416674571613978590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_89
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 4200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06730381929def90800000000000000
+      internalID: -6922715898532628980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_90
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 4200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a84b38e1c6df0d0800000000000000
+      internalID: -3387432466398279048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_91
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 4200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358d7cf081aa4d240800000000000000
+      internalID: 4815660921886595155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_92
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 4200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542b2790955d33370800000000000000
+      internalID: 8301213116561273413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_93
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 4200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d88416a48dd63a60800000000000000
+      internalID: 7653548178554521809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_94
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 4200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e64f8c5d5c095630800000000000000
+      internalID: 3916174946099742437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_95
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 4200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 960cce44479097920800000000000000
+      internalID: 2988430222714257513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa6d7ee89ccc0f40800000000000000
+      internalID: 5696152585925126830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_97
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588883bc9dc5309f0800000000000000
+      internalID: -503456642848225147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_98
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ac7b61445fc0200800000000000000
+      internalID: 147762560584108602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_99
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ede06e73d94fb00800000000000000
+      internalID: 861486292143103646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_100
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e2f073aa982ec30800000000000000
+      internalID: 4387220351173471793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_101
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 3600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c95554e04e2d22c90800000000000000
+      internalID: -7195957377650829924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_102
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 3600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11378b7817871c410800000000000000
+      internalID: 1495608980267365137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_103
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 3600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34edea7ffccd35580800000000000000
+      internalID: -8839478857826378173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_104
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 3600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac6fc31535477ce20800000000000000
+      internalID: 3370790747304163018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_105
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 3600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b6167de4b4e5fb30800000000000000
+      internalID: 4320610883261044403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_106
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 3600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb6330112909dd40800000000000000
+      internalID: 5609524848477039590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_107
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 3600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6566a132685542d20800000000000000
+      internalID: 3252818865471252054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d54f3c8c2a59c48b0800000000000000
+      internalID: -5166590146115275683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_109
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64a6f9044adf9e00800000000000000
+      internalID: 1053800823587775597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_110
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2c46a173130c2f0800000000000000
+      internalID: -954709008266771782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_111
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f317ba4b0c39d6f70800000000000000
+      internalID: 9182157671152447807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_112
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ae924d1407282f0800000000000000
+      internalID: -972091141523903921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_113
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 3000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55deb1f723a78c7b0800000000000000
+      internalID: -5203775012127117995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_114
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 3000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52615d8cfb8644df0800000000000000
+      internalID: -196917310780008923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_115
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 3000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8feb7ccee71fae0800000000000000
+      internalID: -1517292044018583346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_116
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 3000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f84cb7ddf99ac170800000000000000
+      internalID: 8199535387106625784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_117
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 3000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6822502874d0c560800000000000000
+      internalID: 7332093805762586735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_118
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 3000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59fe43761801c07b0800000000000000
+      internalID: -5256808517079863403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_119
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 3000
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c42d35b3afa3bd0800000000000000
+      internalID: -2649530298037810094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37caad91a4fba1560800000000000000
+      internalID: 7285345672207445107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_121
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec5870e0d26219e0800000000000000
+      internalID: -1652149464032846609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_122
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9943b119cb4dd2960800000000000000
+      internalID: 7578947654287832217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_123
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058fc55d7a430dfe0800000000000000
+      internalID: -1166374408045135792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_124
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b6e9b736a046190800000000000000
+      internalID: -7970234018146915426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_125
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fdfed26354ff2d50800000000000000
+      internalID: 6714854208410942969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_126
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 2400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23f764ad7fb65ab0800000000000000
+      internalID: -5019614188307746001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_127
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 2400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e6291ee9fc2c860800000000000000
+      internalID: 7548824206722625123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_128
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 2400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43edf4299050229d0800000000000000
+      internalID: -2800670479603474892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_129
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 2400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15a9461a0cd75fd0800000000000000
+      internalID: -2353170344396085989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_130
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 2400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc7dd56b16f5b520800000000000000
+      internalID: 2717348547721526520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_131
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 2400
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e12ed8c406d13a00800000000000000
+      internalID: 734603530276315616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_132
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe183c2c29bfd2e0800000000000000
+      internalID: -2098755301959786819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_133
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9aea8121ffb0fc0800000000000000
+      internalID: -3527445429926057480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_134
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac2f0699b778c5d0800000000000000
+      internalID: -3042049909318538072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_135
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82455645cd90fc10800000000000000
+      internalID: 2085340098086650510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_136
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c8f491437960500800000000000000
+      internalID: 362143070068640913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_137
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2622ba683eda650800000000000000
+      internalID: 6245898425769026277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_138
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 1800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c508d8e84858960800000000000000
+      internalID: 7603629293679172751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_139
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 1800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174fda4e59f1ed740800000000000000
+      internalID: 5178611350169842801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_140
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 1800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b6313d6b9e2ef00800000000000000
+      internalID: 1144734226740112166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_141
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 1800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e72a956d075f9e0800000000000000
+      internalID: -1588239227649098193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_142
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 1800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f1bb59a880123090800000000000000
+      internalID: -8056358604269440525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_143
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 1800
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c367018b39ae8bac0800000000000000
+      internalID: -3839060762164169156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2014104c88ed7f9c0800000000000000
+      internalID: -3893398673853169406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_145
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 847898d007ca18970800000000000000
+      internalID: 8755468747848386376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_146
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890f2d5806f593280800000000000000
+      internalID: -9063107906939719528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_147
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be85ce5506ce5090800000000000000
+      internalID: -8043774158069985612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_148
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55debef84638e4760800000000000000
+      internalID: 7444031702024580437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_149
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cda51c642fac3f50800000000000000
+      internalID: 6862552503172836804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_150
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 1200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f253542d805d563d0800000000000000
+      internalID: -3213928525194775249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_151
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 1200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955f647655282ab90800000000000000
+      internalID: -7232074748287060647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_152
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 1200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b78dd9c08a2f2420800000000000000
+      internalID: 2607349441901725620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_153
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 1200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c6161cb2ffc3de0800000000000000
+      internalID: -1351925224724927417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_154
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 1200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3042e654e6202b3d0800000000000000
+      internalID: -3192486513217756157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_155
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 1200
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f581b1e5866829e0800000000000000
+      internalID: -1645952938600725004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_156
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ea202ca888c8ce0800000000000000
+      internalID: -1401595254477246971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_157
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5149b248b0ca3f3e0800000000000000
+      internalID: -2021082642297154539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_158
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf13846396c93b50800000000000000
+      internalID: 6573503467472756659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_159
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7343302410c45ff40800000000000000
+      internalID: 5761594866576602167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_160
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7372a76c8197209f0800000000000000
+      internalID: -503707060996004041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_161
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdaf5eb5cdf11dc30800000000000000
+      internalID: 4382318943703268063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_162
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49524677758b7a6b0800000000000000
+      internalID: -5285052951891270252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_163
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c16cb38f08473d10800000000000000
+      internalID: 2105230582290866626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_164
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1876ae42376755670800000000000000
+      internalID: 8526851706408560513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_165
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706306b1c4de52c10800000000000000
+      internalID: 2028288118332864007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_166
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aacc2227d18002e0800000000000000
+      internalID: -2161585060146525534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_167
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 600
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf94148466ef32ba0800000000000000
+      internalID: -6114764153786643972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_168
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae19dc0536b686f0800000000000000
+      internalID: -682657954534973779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_169
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b34f6fa674966b0800000000000000
+      internalID: -5302628561516741861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_170
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a69ccd6ad623af00800000000000000
+      internalID: 1126787051359606439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_171
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195d374e0a074b900800000000000000
+      internalID: 699307678479144337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_172
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeee4315431e17d00800000000000000
+      internalID: 968803009678339818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_173
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 0
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a40e1aa50fc3210800000000000000
+      internalID: 1314189463338895874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_174
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 0
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3813493eb3d8a6b0800000000000000
+      internalID: -5284741348761331652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_175
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 0
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5561b9e089765e2c0800000000000000
+      internalID: -4402999157907057067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_176
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 0
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483ab65bd94701e90800000000000000
+      internalID: -7057012395387149436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_177
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 0
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b17c69a46aa8a310800000000000000
+      internalID: 1416569432123929011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_178
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 0
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3dd8aa7751575390800000000000000
+      internalID: -7829699990998426309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RogerSpritesheet_179
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 0
+        width: 800
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d756763145c67ee40800000000000000
+      internalID: 5685632162937136509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
