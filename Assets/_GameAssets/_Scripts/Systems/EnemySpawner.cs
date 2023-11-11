@@ -4,12 +4,12 @@ using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AI;
+using Zenject;
 using Random = UnityEngine.Random;
 
 [DisallowMultipleComponent]
 public class EnemySpawner : MonoBehaviour
 {
-    public static EnemySpawner Instance; //Can be changed if Zenject is implemented
     public event Action<Enemy> OnEnemyAdded;
     public event Action<Enemy> OnEnemyKilled;
 
@@ -19,23 +19,24 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] [Min(0)] private float _spawnStartDelaySec;
     [SerializeField] [Min(0)] private float _spawnMinDelaySec;
     [SerializeField] [Min(0)] private float _spawnDelayChangeStepSec;
-    [SerializeField] private Renderer _islandRendererNavMesh;
+    [SerializeField] private Transform _navMeshSurfaceTransform;
 
     [Space(5)] [SerializeField] private List<AudioClip> _piratesAudioClips;
 
     private List<Enemy> _spawnedEnemies;
     private float _spawnDelayCurrent;
     private bool _canSpawnEnemy = true;
+    private ObjectPooler _objectPooler;
     private CancellationTokenSource _cancellationTokenSource;
+
+    [Inject]
+    private void Construct(ObjectPooler objectPooler)
+    {
+        _objectPooler = objectPooler;
+    }
 
     private void Awake()
     {
-        if (Instance != null)
-        {
-            Destroy(gameObject);
-        }
-
-        Instance = this;
         _spawnedEnemies = new List<Enemy>();
         _spawnDelayCurrent = _spawnStartDelaySec;
     }
@@ -99,28 +100,24 @@ public class EnemySpawner : MonoBehaviour
 
     public bool GetRandomPointOnNavMesh(out Vector3 randomNavMeshPoint)
     {
-        Bounds rendererBounds = _islandRendererNavMesh.bounds;
-        Vector3 randomPoint = new Vector3(Random.Range(rendererBounds.min.x, rendererBounds.max.x),
-            rendererBounds.center.y, Random.Range(rendererBounds.min.z, rendererBounds.max.z));
-
-        if (NavMesh.SamplePosition(randomPoint, out var navMeshHit, 4, 1))
+        if (NavMesh.SamplePosition(_navMeshSurfaceTransform.position, out var navMeshHit, 100, 1))
         {
             randomNavMeshPoint = navMeshHit.position;
             return true;
         }
 
-        randomNavMeshPoint = randomPoint;
+        randomNavMeshPoint = _navMeshSurfaceTransform.position;
         return false;
     }
 
-    public void SpawnEnemy(Enemy enemyPrefab)
+    private void SpawnEnemy(Enemy enemyPrefab)
     {
         if (!GetRandomPointOnNavMesh(out var randomNavMeshPoint))
         {
             return;
         }
 
-        Enemy enemy = ObjectPooler.Instance.Spawn(enemyPrefab.gameObject, randomNavMeshPoint, Quaternion.identity)
+        Enemy enemy = _objectPooler.Spawn(enemyPrefab.gameObject, randomNavMeshPoint, Quaternion.identity)
             .GetComponent<Enemy>();
         _spawnedEnemies.Add(enemy);
         OnEnemyAdded?.Invoke(enemy);
@@ -129,7 +126,7 @@ public class EnemySpawner : MonoBehaviour
     public void DespawnEnemy(Enemy enemy)
     {
         _spawnedEnemies.Remove(enemy);
-        ObjectPooler.Instance.Despawn(enemy.gameObject);
+        _objectPooler.Despawn(enemy.gameObject);
         OnEnemyKilled?.Invoke(enemy);
     }
 
@@ -152,7 +149,7 @@ public class EnemySpawner : MonoBehaviour
 
         foreach (var enemy in tempEnemiesList)
         {
-            ObjectPooler.Instance.Despawn(enemy.gameObject);
+            _objectPooler.Despawn(enemy.gameObject);
             OnEnemyKilled?.Invoke(enemy);
         }
 

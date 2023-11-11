@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc10540c85d5f1c449105f85b4f19470, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _walkDistance: 20
   _navMeshAgent: {fileID: 465588138950418282}
   _health: 100
 --- !u!1001 &1320943033901975708

@@ -1,6 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
+using Zenject;
 
 public class SpawnedPooledObject
 {
@@ -9,11 +10,14 @@ public class SpawnedPooledObject
     public int AutoDespawnDelayMs { get; }
     public CancellationTokenSource CancellationTokenSource { get; private set; }
 
-    public SpawnedPooledObject(GameObject prefab, bool autoDespawn, int autoDespawnDelayMs)
+    private ObjectPooler _objectPooler;
+
+    public SpawnedPooledObject(GameObject prefab, bool autoDespawn, int autoDespawnDelayMs, ObjectPooler objectPooler)
     {
         Prefab = prefab;
         AutoDespawn = autoDespawn;
         AutoDespawnDelayMs = autoDespawnDelayMs;
+        _objectPooler = objectPooler;
     }
 
 
@@ -32,7 +36,7 @@ public class SpawnedPooledObject
 
         if (Application.isPlaying)
         {
-            ObjectPooler.Instance.Despawn(gameObject);
+            _objectPooler.Despawn(gameObject);
         }
     }
 }

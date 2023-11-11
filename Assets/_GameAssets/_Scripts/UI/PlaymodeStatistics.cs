@@ -1,28 +1,39 @@
 using TMPro;
 using UnityEngine;
+using Zenject;
 
 public class PlaymodeStatistics : MonoBehaviour
 {
     [SerializeField] private TMP_Text _killsText;
     [SerializeField] private TMP_Text _enemiesCountText;
 
+    private EnemySpawner _enemySpawner;
+    private GameManager _gameManager;
+
+    [Inject]
+    private void Construct(EnemySpawner enemySpawner, GameManager gameManager)
+    {
+        _enemySpawner = enemySpawner;
+        _gameManager = gameManager;
+    }
+
     private void OnEnable()
     {
-        EnemySpawner.Instance.OnEnemyKilled += UpdateInfo;
-        EnemySpawner.Instance.OnEnemyAdded += UpdateInfo;
+        _enemySpawner.OnEnemyKilled += UpdateInfo;
+        _enemySpawner.OnEnemyAdded += UpdateInfo;
         UpdateInfo(null);
     }
 
     private void OnDisable()
     {
-        EnemySpawner.Instance.OnEnemyKilled -= UpdateInfo;
-        EnemySpawner.Instance.OnEnemyAdded -= UpdateInfo;
+        _enemySpawner.OnEnemyKilled -= UpdateInfo;
+        _enemySpawner.OnEnemyAdded -= UpdateInfo;
     }
 
-    private void UpdateInfo(Enemy obj)
+    private void UpdateInfo(Enemy enemy)
     {
-        _killsText.text = GameManager.Instance.EnemiesKilled.ToString();
+        _killsText.text = _gameManager.EnemiesKilled.ToString();
         _enemiesCountText.text =
-            $"{EnemySpawner.Instance.CurrentEnemiesCount} / {GameManager.Instance.EnemyCountForDefeat}";
+            $"{_enemySpawner.CurrentEnemiesCount} / {_gameManager.EnemyCountForDefeat}";
     }
 }

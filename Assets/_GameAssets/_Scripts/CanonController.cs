@@ -1,6 +1,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
+using Zenject;
 
 public class CanonController : MonoBehaviour
 {
@@ -38,6 +39,15 @@ public class CanonController : MonoBehaviour
     }
 
     private CancellationTokenSource _cancellationTokenSource;
+    private ObjectPooler _objectPooler;
+    private InputController _inputController;
+
+    [Inject]
+    private void Construct(ObjectPooler objectPooler, InputController inputController)
+    {
+           _objectPooler = objectPooler;
+        _inputController = inputController;
+    }
 
     private void Awake()
     {
@@ -46,7 +56,7 @@ public class CanonController : MonoBehaviour
 
     private void Start()
     {
-        InputController.Instance.OnShotStarted += Shoot;
+        _inputController.OnShotStarted += Shoot;
     }
 
     public void ChangeShootDelay(float newShootDelayTimeSec)
@@ -76,13 +86,13 @@ public class CanonController : MonoBehaviour
         }
 
 
-        ObjectPooler.Instance.Spawn(_ballPrefab, _shootPointTransform.position, Quaternion.identity)
+        _objectPooler.Spawn(_ballPrefab, _shootPointTransform.position, Quaternion.identity)
             .GetComponent<Rigidbody>().AddForce(_canonTrasfrom.forward * _shootForce, ForceMode.Impulse);
 
-        ObjectPooler.Instance.Spawn(_shootVfxPrefab, _shootPointTransform.position, _shootPointTransform.rotation);
+        _objectPooler.Spawn(_shootVfxPrefab, _shootPointTransform.position, _shootPointTransform.rotation);
 
         SoundManager.Instance.PlaySoundOnce(_shotSfx);
-        
+
         PlayerPrefs.SetInt(PlayerPrefsKeys.ShotsFired.ToString(),
             PlayerPrefs.GetInt(PlayerPrefsKeys.ShotsFired.ToString(), 0) + 1);
 

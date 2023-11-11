@@ -12,7 +12,7 @@ public class PowerUpCannon : PowerUp
         _canonController.EnablePowerUp(_durationSec, _tempShootDelaySec);
         OnActivated?.Invoke();
         OnActivated = null;
-        ObjectPooler.Instance.Despawn(gameObject);
+        _objectPooler.Despawn(gameObject);
     }
 
     private void OnEnable()

@@ -2,22 +2,18 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class InputController : MonoBehaviour
+public class InputController : IDisposable
 {
     public static InputController Instance;
     public Action<Vector2> OnShotStarted;
 
     private InputActions _inputActions;
 
-    private void Awake()
+    public InputController()
     {
-        if (Instance != null)
-        {
-            Destroy(this);
-        }
-
-        Instance = this;
         _inputActions = new InputActions();
+        _inputActions.Enable();
+        _inputActions.GunMap.Shot.performed += HandleShotStart;
     }
 
     private void HandleShotStart(InputAction.CallbackContext context)
@@ -25,15 +21,8 @@ public class InputController : MonoBehaviour
         OnShotStarted?.Invoke(_inputActions.GunMap.PointerPosition.ReadValue<Vector2>());
     }
 
-    private void OnEnable()
+    public void Dispose()
     {
-        _inputActions.Enable();
-        _inputActions.GunMap.Shot.performed += HandleShotStart;
-    }
-
-    private void OnDisable()
-    {
-        _inputActions.GunMap.Shot.performed -= HandleShotStart;
-        _inputActions.Disable();
+        _inputActions?.Dispose();
     }
 }

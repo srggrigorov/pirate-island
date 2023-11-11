@@ -4,11 +4,9 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance; //Can be changed when Zenject is implemented
-
     [SerializeField] private int _enemyCountForDefeat;
     public int EnemyCountForDefeat => _enemyCountForDefeat;
-    
+
     [SerializeField] private EnemySpawner _enemySpawner;
     [SerializeField] private PowerUpSpawner _powerUpSpawner;
     [SerializeField] private CanonController _canonController;
@@ -28,16 +26,6 @@ public class GameManager : MonoBehaviour
 
     public int EnemiesKilled { get; private set; }
 
-    private void Awake()
-    {
-        if (Instance != null)
-        {
-            Destroy(gameObject);
-        }
-
-        Instance = this;
-    }
-
     private void Start()
     {
         _enemySpawner.OnEnemyAdded += CheckForDefeat;
@@ -48,6 +36,7 @@ public class GameManager : MonoBehaviour
     {
         EnemiesKilled++;
 
+        //Player Prefs is used to speed up development process, player data and statistics should be saved in a JSON
         PlayerPrefs.SetInt(PlayerPrefsKeys.TotalEnemiesKilled.ToString(),
             PlayerPrefs.GetInt(PlayerPrefsKeys.TotalEnemiesKilled.ToString(), 0) + 1);
 

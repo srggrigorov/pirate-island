@@ -1,13 +1,22 @@
 using UnityEngine;
+using Zenject;
 
 [DisallowMultipleComponent]
 public class PowerUpKillAll : PowerUp
 {
+    private EnemySpawner _enemySpawner;
+
+    [Inject]
+    private void Construct(EnemySpawner enemySpawner)
+    {
+        _enemySpawner = enemySpawner;
+    }
+
     public override void Activate()
     {
-        EnemySpawner.Instance.DespawnAllEnemies();
+        _enemySpawner.DespawnAllEnemies();
         OnActivated?.Invoke();
         OnActivated = null;
-        ObjectPooler.Instance.Despawn(gameObject);
+        _objectPooler.Despawn(gameObject);
     }
 }

@@ -1,30 +1,31 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Pool;
+using Zenject;
+using Object = UnityEngine.Object;
 
 [DisallowMultipleComponent]
-public class ObjectPooler : MonoBehaviour
+public class ObjectPooler : IDisposable
 {
-    public static ObjectPooler Instance; //Can be changed if Zenject is implemented
+    private ObjectPoolerSettings _settings;
+    private DiContainer _container;
 
-    [SerializeField] private List<PoolData> _poolsDataList;
+    private Dictionary<GameObject, ObjectPool<GameObject>> _objectPools = new();
 
-    private Dictionary<GameObject, ObjectPool<GameObject>> _objectPools =
-        new Dictionary<GameObject, ObjectPool<GameObject>>();
-
-    private Dictionary<int, SpawnedPooledObject> _spawnedObjects = new Dictionary<int, SpawnedPooledObject>();
+    private Dictionary<int, SpawnedPooledObject> _spawnedObjects = new();
 
 
-    private void Awake()
+    [Inject]
+    public ObjectPooler(AssetsManager assetsManager, DiContainer container)
     {
-        if (Instance != null)
-        {
-            Destroy(gameObject);
-        }
+        _container = container;
+        _settings = assetsManager.GetModuleSettings<ObjectPoolerSettings>();
+    }
 
-        Instance = this;
-
-        foreach (var poolData in _poolsDataList)
+    public void RegisterPrefabs()
+    {
+        foreach (var poolData in _settings._poolsDataList)
         {
             RegisterPrefabInternal(poolData.Prefab, poolData.PrewarmCount, poolData.AutoDespawn,
                 poolData.AutoDespawnDelaySec);
@@ -36,12 +37,13 @@ public class ObjectPooler : MonoBehaviour
     {
         GameObject CreateFunc()
         {
-            var createdObject = Instantiate(prefab);
+            var createdObject = _container.InstantiatePrefab(prefab);
             _spawnedObjects[createdObject.GetHashCode()] = new SpawnedPooledObject
             (
                 prefab,
                 autoDespawn,
-                (int)(autoDespawnDelaySec * 1000)
+                (int)(autoDespawnDelaySec * 1000),
+                this
             );
             return createdObject;
         }
@@ -70,7 +72,7 @@ public class ObjectPooler : MonoBehaviour
             _spawnedObjects[pooledObjectHashCode].CancellationTokenSource?.Cancel();
             _spawnedObjects[pooledObjectHashCode].CancellationTokenSource?.Dispose();
             _spawnedObjects.Remove(pooledObjectHashCode);
-            Destroy(pooledObject);
+            Object.Destroy(pooledObject);
         }
 
         _objectPools[prefab] = new ObjectPool<GameObject>(
@@ -137,5 +139,11 @@ public class ObjectPooler : MonoBehaviour
     private bool IsPoolable(int hashCode)
     {
         return _spawnedObjects.ContainsKey(hashCode);
+    }
+
+    public void Dispose()
+    {
+        _objectPools.Clear();
+        _spawnedObjects.Clear();
     }
 }

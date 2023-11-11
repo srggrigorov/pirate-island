@@ -543,7 +543,7 @@ TextureImporter:
       213: 5685632162937136509
     second: RogerSpritesheet_179
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -560,10 +560,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -602,6 +604,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -613,6 +617,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -625,6 +630,46 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -4420,9 +4465,189 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      RogerSpritesheet_0: -1949645472881905670
+      RogerSpritesheet_1: -4557620402570728610
+      RogerSpritesheet_10: 4700339612172748350
+      RogerSpritesheet_100: 4387220351173471793
+      RogerSpritesheet_101: -7195957377650829924
+      RogerSpritesheet_102: 1495608980267365137
+      RogerSpritesheet_103: -8839478857826378173
+      RogerSpritesheet_104: 3370790747304163018
+      RogerSpritesheet_105: 4320610883261044403
+      RogerSpritesheet_106: 5609524848477039590
+      RogerSpritesheet_107: 3252818865471252054
+      RogerSpritesheet_108: -5166590146115275683
+      RogerSpritesheet_109: 1053800823587775597
+      RogerSpritesheet_11: -5190829747235374346
+      RogerSpritesheet_110: -954709008266771782
+      RogerSpritesheet_111: 9182157671152447807
+      RogerSpritesheet_112: -972091141523903921
+      RogerSpritesheet_113: -5203775012127117995
+      RogerSpritesheet_114: -196917310780008923
+      RogerSpritesheet_115: -1517292044018583346
+      RogerSpritesheet_116: 8199535387106625784
+      RogerSpritesheet_117: 7332093805762586735
+      RogerSpritesheet_118: -5256808517079863403
+      RogerSpritesheet_119: -2649530298037810094
+      RogerSpritesheet_12: -4735167476430478385
+      RogerSpritesheet_120: 7285345672207445107
+      RogerSpritesheet_121: -1652149464032846609
+      RogerSpritesheet_122: 7578947654287832217
+      RogerSpritesheet_123: -1166374408045135792
+      RogerSpritesheet_124: -7970234018146915426
+      RogerSpritesheet_125: 6714854208410942969
+      RogerSpritesheet_126: -5019614188307746001
+      RogerSpritesheet_127: 7548824206722625123
+      RogerSpritesheet_128: -2800670479603474892
+      RogerSpritesheet_129: -2353170344396085989
+      RogerSpritesheet_13: -8669387943747059384
+      RogerSpritesheet_130: 2717348547721526520
+      RogerSpritesheet_131: 734603530276315616
+      RogerSpritesheet_132: -2098755301959786819
+      RogerSpritesheet_133: -3527445429926057480
+      RogerSpritesheet_134: -3042049909318538072
+      RogerSpritesheet_135: 2085340098086650510
+      RogerSpritesheet_136: 362143070068640913
+      RogerSpritesheet_137: 6245898425769026277
+      RogerSpritesheet_138: 7603629293679172751
+      RogerSpritesheet_139: 5178611350169842801
+      RogerSpritesheet_14: -4546460776757903888
+      RogerSpritesheet_140: 1144734226740112166
+      RogerSpritesheet_141: -1588239227649098193
+      RogerSpritesheet_142: -8056358604269440525
+      RogerSpritesheet_143: -3839060762164169156
+      RogerSpritesheet_144: -3893398673853169406
+      RogerSpritesheet_145: 8755468747848386376
+      RogerSpritesheet_146: -9063107906939719528
+      RogerSpritesheet_147: -8043774158069985612
+      RogerSpritesheet_148: 7444031702024580437
+      RogerSpritesheet_149: 6862552503172836804
+      RogerSpritesheet_15: 1049759214204872337
+      RogerSpritesheet_150: -3213928525194775249
+      RogerSpritesheet_151: -7232074748287060647
+      RogerSpritesheet_152: 2607349441901725620
+      RogerSpritesheet_153: -1351925224724927417
+      RogerSpritesheet_154: -3192486513217756157
+      RogerSpritesheet_155: -1645952938600725004
+      RogerSpritesheet_156: -1401595254477246971
+      RogerSpritesheet_157: -2021082642297154539
+      RogerSpritesheet_158: 6573503467472756659
+      RogerSpritesheet_159: 5761594866576602167
+      RogerSpritesheet_16: 1980535757053523547
+      RogerSpritesheet_160: -503707060996004041
+      RogerSpritesheet_161: 4382318943703268063
+      RogerSpritesheet_162: -5285052951891270252
+      RogerSpritesheet_163: 2105230582290866626
+      RogerSpritesheet_164: 8526851706408560513
+      RogerSpritesheet_165: 2028288118332864007
+      RogerSpritesheet_166: -2161585060146525534
+      RogerSpritesheet_167: -6114764153786643972
+      RogerSpritesheet_168: -682657954534973779
+      RogerSpritesheet_169: -5302628561516741861
+      RogerSpritesheet_17: 3560591920140002964
+      RogerSpritesheet_170: 1126787051359606439
+      RogerSpritesheet_171: 699307678479144337
+      RogerSpritesheet_172: 968803009678339818
+      RogerSpritesheet_173: 1314189463338895874
+      RogerSpritesheet_174: -5284741348761331652
+      RogerSpritesheet_175: -4402999157907057067
+      RogerSpritesheet_176: -7057012395387149436
+      RogerSpritesheet_177: 1416569432123929011
+      RogerSpritesheet_178: -7829699990998426309
+      RogerSpritesheet_179: 5685632162937136509
+      RogerSpritesheet_18: -6528599921274686977
+      RogerSpritesheet_19: 3107985433239789565
+      RogerSpritesheet_2: 104999721977932805
+      RogerSpritesheet_20: 4316252360135667349
+      RogerSpritesheet_21: 8414107105388961339
+      RogerSpritesheet_22: 3797786065260382212
+      RogerSpritesheet_23: -5169324323542377667
+      RogerSpritesheet_24: 3368400943110950353
+      RogerSpritesheet_25: 1366927097896118302
+      RogerSpritesheet_26: 3653336467598750002
+      RogerSpritesheet_27: 7105891220633295167
+      RogerSpritesheet_28: -6874467230461401060
+      RogerSpritesheet_29: 4838539962597310531
+      RogerSpritesheet_3: -3125836137454202754
+      RogerSpritesheet_30: 3576533518145917635
+      RogerSpritesheet_31: 2230292416811317245
+      RogerSpritesheet_32: 4112366696184915502
+      RogerSpritesheet_33: -727384509717117572
+      RogerSpritesheet_34: 6277762337930134103
+      RogerSpritesheet_35: -693000824633585201
+      RogerSpritesheet_36: 4255784683413389958
+      RogerSpritesheet_37: -2517405032908799414
+      RogerSpritesheet_38: -2790519364681157885
+      RogerSpritesheet_39: -2342037582339192246
+      RogerSpritesheet_4: -3759101358940969310
+      RogerSpritesheet_40: -8392738860111578638
+      RogerSpritesheet_41: -4312609286490099601
+      RogerSpritesheet_42: 4708507863932034343
+      RogerSpritesheet_43: 3339481135201116009
+      RogerSpritesheet_44: -4555388034716711684
+      RogerSpritesheet_45: 1610762925182439369
+      RogerSpritesheet_46: 2507145629048603012
+      RogerSpritesheet_47: 1520736592188780136
+      RogerSpritesheet_48: 5050386138542301568
+      RogerSpritesheet_49: -8128061474348287198
+      RogerSpritesheet_5: -5724961094620762581
+      RogerSpritesheet_50: -5411451314894178896
+      RogerSpritesheet_51: -6978562223565708022
+      RogerSpritesheet_52: -8662591339005615220
+      RogerSpritesheet_53: 8478311959896643094
+      RogerSpritesheet_54: 8332986162279994460
+      RogerSpritesheet_55: 8415700893843770068
+      RogerSpritesheet_56: -7690999962663026372
+      RogerSpritesheet_57: -3308535455114099377
+      RogerSpritesheet_58: -1543746292736969085
+      RogerSpritesheet_59: 7997906514680499869
+      RogerSpritesheet_6: 3537497280482276439
+      RogerSpritesheet_60: 2798157452078110348
+      RogerSpritesheet_61: 1206740801927012701
+      RogerSpritesheet_62: -3820393116567110752
+      RogerSpritesheet_63: -1858846760543619204
+      RogerSpritesheet_64: 3297209528771168111
+      RogerSpritesheet_65: 4574730449819539176
+      RogerSpritesheet_66: -3229521259114439725
+      RogerSpritesheet_67: 3385983540248024235
+      RogerSpritesheet_68: -7747508451134393988
+      RogerSpritesheet_69: -5642764448122037491
+      RogerSpritesheet_7: -7851693159752019690
+      RogerSpritesheet_70: 5552199485393320292
+      RogerSpritesheet_71: 3027782620483342130
+      RogerSpritesheet_72: -2046657273124722274
+      RogerSpritesheet_73: 7401214373716605649
+      RogerSpritesheet_74: 2128373554592296494
+      RogerSpritesheet_75: -7743595873732872326
+      RogerSpritesheet_76: -5782832178349558144
+      RogerSpritesheet_77: -102671425002103728
+      RogerSpritesheet_78: -4086149435867912137
+      RogerSpritesheet_79: 3970175863667397274
+      RogerSpritesheet_8: 4740388465273872890
+      RogerSpritesheet_80: -3591221498044566288
+      RogerSpritesheet_81: -8834651645661308958
+      RogerSpritesheet_82: 2339117864785606216
+      RogerSpritesheet_83: -5128455226232211518
+      RogerSpritesheet_84: -6682157882524001368
+      RogerSpritesheet_85: 2077773477162121438
+      RogerSpritesheet_86: 6248045063756440232
+      RogerSpritesheet_87: 5713408742261425277
+      RogerSpritesheet_88: -1416674571613978590
+      RogerSpritesheet_89: -6922715898532628980
+      RogerSpritesheet_9: 7258101179623478280
+      RogerSpritesheet_90: -3387432466398279048
+      RogerSpritesheet_91: 4815660921886595155
+      RogerSpritesheet_92: 8301213116561273413
+      RogerSpritesheet_93: 7653548178554521809
+      RogerSpritesheet_94: 3916174946099742437
+      RogerSpritesheet_95: 2988430222714257513
+      RogerSpritesheet_96: 5696152585925126830
+      RogerSpritesheet_97: -503456642848225147
+      RogerSpritesheet_98: 147762560584108602
+      RogerSpritesheet_99: 861486292143103646
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -1,20 +1,53 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using Zenject;
+using Random = UnityEngine.Random;
 
 public class Enemy : MonoBehaviour, IDamageable
 {
+    [SerializeField] private float _walkDistance;
     [SerializeField] private NavMeshAgent _navMeshAgent;
+
+    private Transform _transform;
+    private Vector3 _randomPoint;
+    private WaitUntil _waitUntilDestinationFound;
+    private WaitUntil _waitUntilDestinationReached;
+    private EnemySpawner _enemySpawner;
+
+    [Inject]
+    private void Construct(EnemySpawner enemySpawner)
+    {
+        _enemySpawner = enemySpawner;
+    }
+
+    private void Awake()
+    {
+        _transform = transform;
+        _waitUntilDestinationFound = new WaitUntil(() => FindRandomDestination(out _randomPoint));
+        _waitUntilDestinationReached =
+            new WaitUntil(() => _navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance);
+    }
 
     private IEnumerator SetRandomDestination()
     {
-        Vector3 randomPoint = Vector3.zero;
-        yield return new WaitUntil(() => EnemySpawner.Instance.GetRandomPointOnNavMesh(out randomPoint));
-
-        _navMeshAgent.SetDestination(randomPoint);
-
-        yield return new WaitUntil(() => _navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance);
+        yield return _waitUntilDestinationFound;
+        _navMeshAgent.SetDestination(_randomPoint);
+        yield return _waitUntilDestinationReached;
         StartCoroutine(SetRandomDestination());
+    }
+
+    private bool FindRandomDestination(out Vector3 randomNavMeshDestinationPoint)
+    {
+        Vector3 randomPointInsideSphere = Random.insideUnitSphere * _walkDistance + _transform.position;
+        randomNavMeshDestinationPoint = randomPointInsideSphere;
+        if (NavMesh.SamplePosition(randomPointInsideSphere, out var navMeshHit, _walkDistance, NavMesh.AllAreas))
+        {
+            randomNavMeshDestinationPoint = navMeshHit.position;
+            return true;
+        }
+
+        return false;
     }
 
     private void OnEnable()
@@ -52,7 +85,7 @@ public class Enemy : MonoBehaviour, IDamageable
 
     public void HandleHealthDeplete()
     {
-        EnemySpawner.Instance.DespawnEnemy(this);
+        _enemySpawner.DespawnEnemy(this);
     }
 
     #endregion

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
+using Zenject;
 
 [DisallowMultipleComponent]
 public class PowerUpSpawner : MonoBehaviour
@@ -12,6 +13,13 @@ public class PowerUpSpawner : MonoBehaviour
 
     private CancellationTokenSource _cancellationTokenSource;
     private PowerUp _lastSpawnPowerUp;
+    private ObjectPooler _objectPooler;
+
+    [Inject]
+    public void Construct(ObjectPooler objectPooler)
+    {
+        _objectPooler = objectPooler;
+    }
 
     private async Task SetNextSpawn()
     {
@@ -32,7 +40,7 @@ public class PowerUpSpawner : MonoBehaviour
             y = Random.Range(spawnBounds.min.y, spawnBounds.max.y),
             z = Random.Range(spawnBounds.min.z, spawnBounds.max.z)
         };
-        _lastSpawnPowerUp = ObjectPooler.Instance.Spawn(
+        _lastSpawnPowerUp = _objectPooler.Spawn(
             _powerUpPrefabs[Random.Range(0, _powerUpPrefabs.Count)].gameObject, _randomPointInSpawnArea,
             Quaternion.identity).GetComponent<PowerUp>();
         _lastSpawnPowerUp.OnActivated += StartSpawning;

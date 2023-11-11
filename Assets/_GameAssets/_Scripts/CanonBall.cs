@@ -1,4 +1,5 @@
 using UnityEngine;
+using Zenject;
 
 [RequireComponent(typeof(Rigidbody))]
 [DisallowMultipleComponent]
@@ -7,6 +8,14 @@ public class CanonBall : MonoBehaviour
     [SerializeField] private int _damage;
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private GameObject _hitVfxPrefab;
+
+    private ObjectPooler _objectPooler;
+
+    [Inject]
+    private void Construct(ObjectPooler objectPooler)
+    {
+        _objectPooler = objectPooler;
+    }
 
     private void OnEnable()
     {
@@ -27,8 +36,8 @@ public class CanonBall : MonoBehaviour
             iDamageable.TakeDamage(_damage);
         }
 
-        ObjectPooler.Instance.Spawn(_hitVfxPrefab, collision.contacts[0].point, Quaternion.identity);
-        ObjectPooler.Instance.Despawn(gameObject);
+        _objectPooler.Spawn(_hitVfxPrefab, collision.contacts[0].point, Quaternion.identity);
+        _objectPooler.Despawn(gameObject);
     }
 
     private void OnTriggerEnter(Collider trigger)
@@ -36,7 +45,7 @@ public class CanonBall : MonoBehaviour
         if (trigger.TryGetComponent<PowerUp>(out var powerUp))
         {
             powerUp.Activate();
-            ObjectPooler.Instance.Despawn(gameObject);
+            _objectPooler.Despawn(gameObject);
         }
     }
 }

@@ -1,0 +1,21 @@
+{
+    "name": "srggrigorov.PirateIsland",
+    "rootNamespace": "",
+    "references": [
+        "Unity.InputSystem",
+        "Zenject",
+        "Unity.Addressables",
+        "Unity.TextMeshPro",
+        "Unity.2D.Sprite.Package.EditorTests",
+        "Unity.ResourceManager"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
