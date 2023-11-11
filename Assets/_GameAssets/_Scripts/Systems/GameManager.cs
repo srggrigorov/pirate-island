@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private EnemySpawner _enemySpawner;
     [SerializeField] private PowerUpSpawner _powerUpSpawner;
-    [SerializeField] private CanonController _canonController;
+    [SerializeField] private CannonController _cannonController;
     [SerializeField] private TransformRotator _shipRotator;
 
     [Space(5), SerializeField] private DefeatScreen _defeatScreen;
@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
     {
         _enemySpawner.StartSpawning();
         _powerUpSpawner.StartSpawning();
-        _shipRotator.enabled = _canonController.CanShoot = true;
+        _shipRotator.enabled = _cannonController.CanShoot = true;
         _playmodeStatistics.gameObject.SetActive(true);
     }
 
@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
         _enemySpawner.OnEnemyAdded -= CheckForDefeat;
         _enemySpawner.StopSpawning();
         _powerUpSpawner.StopSpawning();
-        _canonController.CanShoot = false;
+        _cannonController.CanShoot = false;
         _defeatScreen.gameObject.SetActive(true);
         _playmodeStatistics.gameObject.SetActive(false);
     }

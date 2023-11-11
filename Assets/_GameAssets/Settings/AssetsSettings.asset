@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AssetsSettings
   m_EditorClassIdentifier: 
   _settingsList:
-  - m_AssetGUID: b4dbc5995b83abf4b9fa5d4d13e4fb12
+  - m_AssetGUID: 3f0807643072da04aa5dfcbba9de78f7
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0

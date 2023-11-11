@@ -5,7 +5,7 @@ public class PowerUpCannon : PowerUp
 {
     [SerializeField] [Min(0)] private float _durationSec;
     [SerializeField] [Min(0)] private float _tempShootDelaySec;
-    private CanonController _canonController;
+    private CannonController _canonController;
 
     public override void Activate()
     {
@@ -17,6 +17,6 @@ public class PowerUpCannon : PowerUp
 
     private void OnEnable()
     {
-        _canonController ??= FindObjectOfType<CanonController>();
+        _canonController ??= FindObjectOfType<CannonController>();
     }
 }

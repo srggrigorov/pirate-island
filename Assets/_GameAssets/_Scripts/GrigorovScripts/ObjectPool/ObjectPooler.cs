@@ -20,7 +20,10 @@ public class ObjectPooler : IDisposable
     public ObjectPooler(AssetsManager assetsManager, DiContainer container)
     {
         _container = container;
-        _settings = assetsManager.GetModuleSettings<ObjectPoolerSettings>();
+
+        //Resources used because of the impossibility of prefabs comparison in addressables (double instancing in build)
+        var settingsHandleRequest = Resources.LoadAsync<ObjectPoolerSettings>("ObjectPoolerSettings");
+        _settings = (ObjectPoolerSettings)settingsHandleRequest.asset;
     }
 
     public void RegisterPrefabs()
@@ -30,6 +33,8 @@ public class ObjectPooler : IDisposable
             RegisterPrefabInternal(poolData.Prefab, poolData.PrewarmCount, poolData.AutoDespawn,
                 poolData.AutoDespawnDelaySec);
         }
+
+        Resources.UnloadAsset(_settings);
     }
 
     private void RegisterPrefabInternal(GameObject prefab, int prewarmCount, bool autoDespawn,

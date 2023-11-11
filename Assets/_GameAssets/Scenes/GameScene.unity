@@ -33265,7 +33265,7 @@ MonoBehaviour:
   _shootForce: 80
   _shootDelayTimeSec: 1
   _aimCamera: {fileID: 963194227}
-  _canonTrasfrom: {fileID: 2147566300306868555}
+  _cannonTrasfrom: {fileID: 2147566300306868555}
   _shootPointTransform: {fileID: 994772845}
   _ballPrefab: {fileID: 1872791079889241224, guid: 0de1c04356360d54d80a39c40c46dc14, type: 3}
   _shootVfxPrefab: {fileID: 3735211134507177141, guid: 9444b8fc8c635424ba0e75d00c3b03be, type: 3}
@@ -34646,7 +34646,7 @@ MonoBehaviour:
   _enemyCountForDefeat: 10
   _enemySpawner: {fileID: 1867739239}
   _powerUpSpawner: {fileID: 1454861319}
-  _canonController: {fileID: 1488446579}
+  _cannonController: {fileID: 1488446579}
   _shipRotator: {fileID: 830267835}
   _defeatScreen: {fileID: 1360890160}
   _playmodeStatistics: {fileID: 1455197588}

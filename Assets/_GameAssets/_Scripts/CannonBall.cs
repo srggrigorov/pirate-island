@@ -3,7 +3,7 @@ using Zenject;
 
 [RequireComponent(typeof(Rigidbody))]
 [DisallowMultipleComponent]
-public class CanonBall : MonoBehaviour
+public class CannonBall : MonoBehaviour
 {
     [SerializeField] private int _damage;
     [SerializeField] private Rigidbody _rigidbody;

@@ -3,13 +3,13 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Zenject;
 
-public class CanonController : MonoBehaviour
+public class CannonController : MonoBehaviour
 {
     [SerializeField] private float _shootForce;
     [SerializeField] private float _shootDelayTimeSec;
 
     [Space(10)] [SerializeField] private Camera _aimCamera;
-    [SerializeField] private Transform _canonTrasfrom;
+    [SerializeField] private Transform _cannonTrasfrom;
     [SerializeField] private Transform _shootPointTransform;
     [SerializeField] private GameObject _ballPrefab;
     [SerializeField] private GameObject _shootVfxPrefab;
@@ -78,16 +78,16 @@ public class CanonController : MonoBehaviour
         Ray shootRay = _aimCamera.ScreenPointToRay(pointerPosition);
         if (Physics.Raycast(shootRay, out var raycastHit, Mathf.Infinity, _cameraRayCollisionMask))
         {
-            _canonTrasfrom.LookAt(raycastHit.point);
+            _cannonTrasfrom.LookAt(raycastHit.point);
         }
         else
         {
-            _canonTrasfrom.LookAt(shootRay.origin + shootRay.direction * 100);
+            _cannonTrasfrom.LookAt(shootRay.origin + shootRay.direction * 100);
         }
 
 
         _objectPooler.Spawn(_ballPrefab, _shootPointTransform.position, Quaternion.identity)
-            .GetComponent<Rigidbody>().AddForce(_canonTrasfrom.forward * _shootForce, ForceMode.Impulse);
+            .GetComponent<Rigidbody>().AddForce(_cannonTrasfrom.forward * _shootForce, ForceMode.Impulse);
 
         _objectPooler.Spawn(_shootVfxPrefab, _shootPointTransform.position, _shootPointTransform.rotation);
 

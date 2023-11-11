@@ -17,13 +17,13 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 587beceff8b948642866f2ed8d274017
   m_SerializeEntries:
-  - m_GUID: b4dbc5995b83abf4b9fa5d4d13e4fb12
-    m_Address: ObjectPoolerSettings
+  - m_GUID: 9b8695b37e9a5f74f86dabfe85b01e1f
+    m_Address: AssetsSettings
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9b8695b37e9a5f74f86dabfe85b01e1f
-    m_Address: AssetsSettings
+  - m_GUID: 3f0807643072da04aa5dfcbba9de78f7
+    m_Address: EnemySpawnerSettings
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

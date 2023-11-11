@@ -7,6 +7,8 @@ using UnityEngine.AddressableAssets;
 using UnityEngine.AddressableAssets.ResourceLocators;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
+
+//This class is needed for loading different settings in the future
 public class AssetsManager : IDisposable
 {
     private const string SETTINGS_KEY = "AssetsSettings";
@@ -19,7 +21,7 @@ public class AssetsManager : IDisposable
         var key = typeof(T);
         if (!_modulesSettings.ContainsKey(key))
         {
-            Debug.LogError($"Not found module settings: {key}");
+            Debug.LogError($"Module settings not found : {key}");
             return null;
         }
 

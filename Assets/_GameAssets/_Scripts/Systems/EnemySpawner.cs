@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using _GameAssets._Scripts.Data;
 using UnityEngine;
 using UnityEngine.AI;
 using Zenject;
@@ -16,9 +17,7 @@ public class EnemySpawner : MonoBehaviour
     public int CurrentEnemiesCount => _spawnedEnemies.Count;
 
     [SerializeField] private List<Enemy> _enemiesPrefabs;
-    [SerializeField] [Min(0)] private float _spawnStartDelaySec;
-    [SerializeField] [Min(0)] private float _spawnMinDelaySec;
-    [SerializeField] [Min(0)] private float _spawnDelayChangeStepSec;
+
     [SerializeField] private Transform _navMeshSurfaceTransform;
 
     [Space(5)] [SerializeField] private List<AudioClip> _piratesAudioClips;
@@ -28,17 +27,19 @@ public class EnemySpawner : MonoBehaviour
     private bool _canSpawnEnemy = true;
     private ObjectPooler _objectPooler;
     private CancellationTokenSource _cancellationTokenSource;
+    private EnemySpawnerSettings _settings;
 
     [Inject]
-    private void Construct(ObjectPooler objectPooler)
+    private void Construct(ObjectPooler objectPooler, AssetsManager assetsManager)
     {
         _objectPooler = objectPooler;
+        _settings = assetsManager.GetModuleSettings<EnemySpawnerSettings>();
     }
 
     private void Awake()
     {
         _spawnedEnemies = new List<Enemy>();
-        _spawnDelayCurrent = _spawnStartDelaySec;
+        _spawnDelayCurrent = _settings.SpawnStartDelaySec;
     }
 
     public async void StartSpawning()
@@ -51,12 +52,12 @@ public class EnemySpawner : MonoBehaviour
 
     public void DecreaseSpawnDelay()
     {
-        if (_spawnDelayCurrent - _spawnDelayChangeStepSec <= _spawnMinDelaySec)
+        if (_spawnDelayCurrent - _settings.SpawnDelayChangeStepSec <= _settings.SpawnMinDelaySec)
         {
             return;
         }
 
-        _spawnDelayCurrent -= _spawnDelayChangeStepSec;
+        _spawnDelayCurrent -= _settings.SpawnDelayChangeStepSec;
     }
 
     private async Task SetNextSpawn(CancellationToken cancellationToken)
