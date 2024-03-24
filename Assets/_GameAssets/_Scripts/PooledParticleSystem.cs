@@ -14,6 +14,6 @@ public class PooledParticleSystem : MonoBehaviour
 
     private void OnParticleSystemStopped()
     {
-        _objectPooler.Despawn(gameObject);
+        _objectPooler.Despawn(this);
     }
 }

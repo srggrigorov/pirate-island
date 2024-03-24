@@ -15,7 +15,7 @@ public class Preload : MonoBehaviour
         _sceneLoader = sceneLoader;
     }
 
-    private async void Awake()
+    async private void Awake()
     {
         await _assetsManager.InitializeAsync();
         await _assetsManager.LoadModulesSettings();

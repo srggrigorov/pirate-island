@@ -4,19 +4,14 @@ using Zenject;
 [DisallowMultipleComponent]
 public class PowerUpKillAll : PowerUp
 {
-    private EnemySpawner _enemySpawner;
-
     [Inject]
     private void Construct(EnemySpawner enemySpawner)
     {
-        _enemySpawner = enemySpawner;
+        PowerUpEffect = new PowerUpEffectKillAll(enemySpawner, this);
     }
 
-    public override void Activate()
+    public override void Despawn()
     {
-        _enemySpawner.DespawnAllEnemies();
-        OnActivated?.Invoke();
-        OnActivated = null;
-        _objectPooler.Despawn(gameObject);
+        _objectPooler.Despawn(this);
     }
 }

@@ -3,49 +3,43 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using _GameAssets._Scripts.Data;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AI;
-using Zenject;
 using Random = UnityEngine.Random;
 
 [DisallowMultipleComponent]
-public class EnemySpawner : MonoBehaviour
+public class EnemySpawner : IDisposable
 {
     public event Action<Enemy> OnEnemyAdded;
     public event Action<Enemy> OnEnemyKilled;
 
     public int CurrentEnemiesCount => _spawnedEnemies.Count;
+    public float DespawnDelay => _settings.DespawnDelaySec;
 
-    [SerializeField] private List<Enemy> _enemiesPrefabs;
-
-    [SerializeField] private Transform _navMeshSurfaceTransform;
-
-    [Space(5)] [SerializeField] private List<AudioClip> _piratesAudioClips;
-
+    private EnemySpawnerSettings _settings;
+    private Collider _spawnZoneCollider;
     private List<Enemy> _spawnedEnemies;
     private float _spawnDelayCurrent;
     private bool _canSpawnEnemy = true;
     private ObjectPooler _objectPooler;
     private CancellationTokenSource _cancellationTokenSource;
-    private EnemySpawnerSettings _settings;
+    private SoundManager _soundManager;
 
-    [Inject]
-    private void Construct(ObjectPooler objectPooler, AssetsManager assetsManager)
+    public EnemySpawner(Collider spawnZoneCollider, ObjectPooler objectPooler, AssetsManager assetsManager, SoundManager soundManager)
     {
-        _objectPooler = objectPooler;
-        _settings = assetsManager.GetModuleSettings<EnemySpawnerSettings>();
-    }
-
-    private void Awake()
-    {
+        _spawnZoneCollider = spawnZoneCollider;
         _spawnedEnemies = new List<Enemy>();
+        _objectPooler = objectPooler;
+        _soundManager = soundManager;
+        _settings = assetsManager.GetModuleSettings<EnemySpawnerSettings>();
         _spawnDelayCurrent = _settings.SpawnStartDelaySec;
     }
 
-    public async void StartSpawning()
+    public void StartSpawning()
     {
         _cancellationTokenSource = new CancellationTokenSource();
-        await SetNextSpawn(_cancellationTokenSource.Token);
+        SetNextSpawn(_cancellationTokenSource.Token).Forget();
     }
 
     public void StopSpawning() => ClearCancellationToken();
@@ -60,7 +54,7 @@ public class EnemySpawner : MonoBehaviour
         _spawnDelayCurrent -= _settings.SpawnDelayChangeStepSec;
     }
 
-    private async Task SetNextSpawn(CancellationToken cancellationToken)
+    async private UniTask SetNextSpawn(CancellationToken cancellationToken)
     {
         while (true)
         {
@@ -88,37 +82,47 @@ public class EnemySpawner : MonoBehaviour
                 await Task.Yield();
             }
 
-            SpawnEnemy(_enemiesPrefabs[Random.Range(0, _enemiesPrefabs.Count)]);
+            SpawnEnemy(_settings.EnemiesPrefabs[Random.Range(0, _settings.EnemiesPrefabs.Count)]);
 
-            if (_piratesAudioClips != null)
+            if (_settings.PiratesAudioClips != null)
             {
-                SoundManager.Instance.PlaySoundOnce(_piratesAudioClips[Random.Range(0, _piratesAudioClips.Count)]);
+                _soundManager.PlaySoundOnce(_settings.PiratesAudioClips[Random.Range(0, _settings.PiratesAudioClips.Count)]);
             }
         }
     }
 
     //Made by Sergei Grigorov
 
-    public bool GetRandomPointOnNavMesh(out Vector3 randomNavMeshPoint)
+    private bool TryGetRandomPointOnNavMesh(out Vector3 randomNavMeshPoint)
     {
-        if (NavMesh.SamplePosition(_navMeshSurfaceTransform.position, out var navMeshHit, 100, 1))
+        if (_spawnZoneCollider == null)
+        {
+            randomNavMeshPoint = Vector3.zero;
+            return false;
+        }
+        Bounds spawnBounds = _spawnZoneCollider.bounds;
+        randomNavMeshPoint = new Vector3(
+            Random.Range(spawnBounds.min.x, spawnBounds.max.x),
+            Random.Range(spawnBounds.min.y, spawnBounds.max.y),
+            Random.Range(spawnBounds.min.z, spawnBounds.max.z));
+
+        if (NavMesh.SamplePosition(randomNavMeshPoint, out var navMeshHit, 10, 1))
         {
             randomNavMeshPoint = navMeshHit.position;
             return true;
         }
 
-        randomNavMeshPoint = _navMeshSurfaceTransform.position;
         return false;
     }
 
     private void SpawnEnemy(Enemy enemyPrefab)
     {
-        if (!GetRandomPointOnNavMesh(out var randomNavMeshPoint))
+        if (!TryGetRandomPointOnNavMesh(out var randomNavMeshPoint))
         {
             return;
         }
 
-        Enemy enemy = _objectPooler.Spawn(enemyPrefab.gameObject, randomNavMeshPoint, Quaternion.identity)
+        Enemy enemy = _objectPooler.Spawn(enemyPrefab, randomNavMeshPoint, Quaternion.identity)
             .GetComponent<Enemy>();
         _spawnedEnemies.Add(enemy);
         OnEnemyAdded?.Invoke(enemy);
@@ -127,13 +131,8 @@ public class EnemySpawner : MonoBehaviour
     public void DespawnEnemy(Enemy enemy)
     {
         _spawnedEnemies.Remove(enemy);
-        _objectPooler.Despawn(enemy.gameObject);
+        _objectPooler.Despawn(enemy);
         OnEnemyKilled?.Invoke(enemy);
-    }
-
-    private void OnDestroy()
-    {
-        ClearCancellationToken();
     }
 
     private void ClearCancellationToken()
@@ -143,17 +142,21 @@ public class EnemySpawner : MonoBehaviour
         _cancellationTokenSource = null;
     }
 
-    public void DespawnAllEnemies()
+    public void KillAllEnemies()
     {
         var tempEnemiesList = new List<Enemy>(_spawnedEnemies);
         _spawnedEnemies.Clear();
 
         foreach (var enemy in tempEnemiesList)
         {
-            _objectPooler.Despawn(enemy.gameObject);
+            enemy.HandleHealthDeplete();
             OnEnemyKilled?.Invoke(enemy);
         }
 
         tempEnemiesList.Clear();
+    }
+    public void Dispose()
+    {
+        ClearCancellationToken();
     }
 }

@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f22f7e80920414db6d07a22add0a572, type: 3}
   m_Name: EnemySpawnerSettings
   m_EditorClassIdentifier: srggrigorov.PirateIsland:_GameAssets._Scripts.Data:EnemySpawnerSettings
-  SpawnStartDelaySec: 5
-  SpawnMinDelaySec: 2
-  SpawnDelayChangeStepSec: 0.5
+  <EnemiesPrefabs>k__BackingField:
+  - {fileID: 465588138950418280, guid: 0464cfd606425c741bd3656e635aa771, type: 3}
+  - {fileID: 5849185898137796081, guid: 7ad3acf0c3f703c4ca3ade8b40750c2f, type: 3}
+  <PiratesAudioClips>k__BackingField:
+  - {fileID: 8300000, guid: 29bfe3d95e7eaac44942098b93f5e3fd, type: 3}
+  - {fileID: 8300000, guid: 120f715faf3182348b6242a423dc052a, type: 3}
+  <SpawnStartDelaySec>k__BackingField: 5
+  <SpawnMinDelaySec>k__BackingField: 1
+  <SpawnDelayChangeStepSec>k__BackingField: 0.5
+  <DespawnDelaySec>k__BackingField: 3
+  <FadeDurationSec>k__BackingField: 3

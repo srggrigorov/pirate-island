@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e3877880c4368b4d903c26e3fc46f7a, type: 3}
+  m_Name: ObjectPoolerSettings
+  m_EditorClassIdentifier: 
+  <PoolsDataList>k__BackingField:
+  - <Prefab>k__BackingField: {fileID: 1097921116984600132, guid: 0de1c04356360d54d80a39c40c46dc14, type: 3}
+    <PrewarmCount>k__BackingField: 20
+    <AutoDespawn>k__BackingField: 1
+    <AutoDespawnDelaySec>k__BackingField: 5
+  - <Prefab>k__BackingField: {fileID: 465588138950418280, guid: 0464cfd606425c741bd3656e635aa771, type: 3}
+    <PrewarmCount>k__BackingField: 10
+    <AutoDespawn>k__BackingField: 0
+    <AutoDespawnDelaySec>k__BackingField: 0
+  - <Prefab>k__BackingField: {fileID: 5849185898137796081, guid: 7ad3acf0c3f703c4ca3ade8b40750c2f, type: 3}
+    <PrewarmCount>k__BackingField: 10
+    <AutoDespawn>k__BackingField: 0
+    <AutoDespawnDelaySec>k__BackingField: 0
+  - <Prefab>k__BackingField: {fileID: 2653113215251051658, guid: 5663a56edfef773479b901a81ef6802c, type: 3}
+    <PrewarmCount>k__BackingField: 1
+    <AutoDespawn>k__BackingField: 0
+    <AutoDespawnDelaySec>k__BackingField: 0
+  - <Prefab>k__BackingField: {fileID: 6716070550009801227, guid: 668de1604e193424eb1e1e1d0eaaa9f6, type: 3}
+    <PrewarmCount>k__BackingField: 1
+    <AutoDespawn>k__BackingField: 0
+    <AutoDespawnDelaySec>k__BackingField: 0
+  - <Prefab>k__BackingField: {fileID: 7902288687174534483, guid: 9444b8fc8c635424ba0e75d00c3b03be, type: 3}
+    <PrewarmCount>k__BackingField: 20
+    <AutoDespawn>k__BackingField: 0
+    <AutoDespawnDelaySec>k__BackingField: 0
+  - <Prefab>k__BackingField: {fileID: 8785017824676009134, guid: b0d85b94cf0ad4948bd93c7603538842, type: 3}
+    <PrewarmCount>k__BackingField: 20
+    <AutoDespawn>k__BackingField: 0
+    <AutoDespawnDelaySec>k__BackingField: 0

@@ -1,18 +1,20 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 [DisallowMultipleComponent]
 public class GameManager : MonoBehaviour
 {
+    public int EnemiesKilled { get; private set; }
+
     [SerializeField] private int _enemyCountForDefeat;
     public int EnemyCountForDefeat => _enemyCountForDefeat;
 
-    [SerializeField] private EnemySpawner _enemySpawner;
-    [SerializeField] private PowerUpSpawner _powerUpSpawner;
     [SerializeField] private CannonController _cannonController;
     [SerializeField] private TransformRotator _shipRotator;
 
-    [Space(5), SerializeField] private DefeatScreen _defeatScreen;
+    [Space(5), SerializeField]
+    private DefeatScreen _defeatScreen;
     [SerializeField] private PlaymodeStatistics _playmodeStatistics;
 
     [Header("Difficulty progression")]
@@ -22,9 +24,23 @@ public class GameManager : MonoBehaviour
     private bool _decreaseSpawnDelayOnEveryNEnemy;
 
     [SerializeField] private int _nEnemy;
-    [Space(10), SerializeField] private List<int> _spawnDelayDecreaseKillsCounts = new List<int>();
+    [Space(10), SerializeField]
+    private List<int> _spawnDelayDecreaseKillsCounts = new List<int>();
 
-    public int EnemiesKilled { get; private set; }
+    private EnemySpawner _enemySpawner;
+    private PowerUpSpawner _powerUpSpawner;
+
+    [Inject]
+    public void Construct(EnemySpawner enemySpawner, PowerUpSpawner powerUpSpawner)
+    {
+        _enemySpawner = enemySpawner;
+        _powerUpSpawner = powerUpSpawner;
+        
+        #if PLATFORM_ANDROID
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        #endif
+    }
 
     private void Start()
     {
@@ -77,5 +93,6 @@ public class GameManager : MonoBehaviour
         _cannonController.CanShoot = false;
         _defeatScreen.gameObject.SetActive(true);
         _playmodeStatistics.gameObject.SetActive(false);
+        StopAllCoroutines();
     }
 }

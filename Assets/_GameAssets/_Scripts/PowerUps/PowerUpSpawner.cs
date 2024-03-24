@@ -1,32 +1,33 @@
-using System.Collections.Generic;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
-using Zenject;
+using Random = UnityEngine.Random;
 
-[DisallowMultipleComponent]
-public class PowerUpSpawner : MonoBehaviour
+public class PowerUpSpawner : IDisposable
 {
-    [SerializeField] [Min(0)] private float _spawnDelayTimeSec;
-    [SerializeField] private Collider _spawnAreaCollider;
-    [SerializeField] private List<PowerUp> _powerUpPrefabs;
-
+    private PowerUpSpawnerSettings _settings;
+    private ObjectPooler _objectPooler;
+    private readonly Collider _spawnAreaCollider;
+    
     private CancellationTokenSource _cancellationTokenSource;
     private PowerUp _lastSpawnPowerUp;
-    private ObjectPooler _objectPooler;
-
-    [Inject]
-    public void Construct(ObjectPooler objectPooler)
+    
+    public PowerUpSpawner(Collider spawnAreaCollider, ObjectPooler objectPooler, AssetsManager assetsManager)
     {
+        _spawnAreaCollider = spawnAreaCollider;
         _objectPooler = objectPooler;
+        _settings = assetsManager.GetModuleSettings<PowerUpSpawnerSettings>();
     }
 
-    private async Task SetNextSpawn()
+    async private UniTask SetNextSpawn()
     {
         _cancellationTokenSource = new CancellationTokenSource();
         try
         {
-            await Task.Delay((int)(_spawnDelayTimeSec * 1000), _cancellationTokenSource.Token);
+            await UniTask.Delay((int)(_settings.SpawnDelayTimeSec * 1000), DelayType.DeltaTime, 
+                                PlayerLoopTiming.Update, _cancellationTokenSource.Token);
         }
         catch (TaskCanceledException)
         {
@@ -41,30 +42,29 @@ public class PowerUpSpawner : MonoBehaviour
             z = Random.Range(spawnBounds.min.z, spawnBounds.max.z)
         };
         _lastSpawnPowerUp = _objectPooler.Spawn(
-            _powerUpPrefabs[Random.Range(0, _powerUpPrefabs.Count)].gameObject, _randomPointInSpawnArea,
+            _settings.PowerUpPrefabs[Random.Range(0, _settings.PowerUpPrefabs.Count)], _randomPointInSpawnArea,
             Quaternion.identity).GetComponent<PowerUp>();
         _lastSpawnPowerUp.OnActivated += StartSpawning;
     }
 
-    public async void StartSpawning()
+    public void StartSpawning()
     {
         _cancellationTokenSource = new CancellationTokenSource();
-        await SetNextSpawn();
+        SetNextSpawn().Forget();
     }
 
     //Made by Sergei Grigorov
 
     public void StopSpawning() => ClearCancellationToken();
 
-    private void OnDestroy()
-    {
-        ClearCancellationToken();
-    }
-
     private void ClearCancellationToken()
     {
         _cancellationTokenSource?.Cancel();
         _cancellationTokenSource?.Dispose();
         _cancellationTokenSource = null;
+    }
+    public void Dispose()
+    {
+        ClearCancellationToken();
     }
 }

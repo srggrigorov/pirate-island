@@ -5,18 +5,21 @@ using Zenject;
 
 public class CannonController : MonoBehaviour
 {
-    [SerializeField] private float _shootForce;
-    [SerializeField] private float _shootDelayTimeSec;
 
-    [Space(10)] [SerializeField] private Camera _aimCamera;
-    [SerializeField] private Transform _cannonTrasfrom;
+    [Space(10)] [SerializeField]
+    private Camera _aimCamera;
+    [SerializeField] private Transform _cannonTransform;
     [SerializeField] private Transform _shootPointTransform;
-    [SerializeField] private GameObject _ballPrefab;
-    [SerializeField] private GameObject _shootVfxPrefab;
+    [SerializeField] private CannonBall _ballPrefab;
+    [SerializeField] private PooledParticleSystem _shootVfxPrefab;
     [SerializeField] private AudioClip _shotSfx;
     [SerializeField] private LayerMask _cameraRayCollisionMask;
 
+    private float _shootForce;
+    private float _shootDelayTimeSec;
     private bool _canShoot;
+    private SoundManager _soundManager;
+    private CannonSettings _settings;
 
     public bool CanShoot
     {
@@ -43,10 +46,14 @@ public class CannonController : MonoBehaviour
     private InputController _inputController;
 
     [Inject]
-    private void Construct(ObjectPooler objectPooler, InputController inputController)
+    private void Construct(ObjectPooler objectPooler, InputController inputController, SoundManager soundManager, AssetsManager assetsManager)
     {
-           _objectPooler = objectPooler;
+        _objectPooler = objectPooler;
         _inputController = inputController;
+        _soundManager = soundManager;
+        _settings = assetsManager.GetModuleSettings<CannonSettings>();
+        _shootDelayTimeSec = _settings.ShootDelayTimeSec;
+        _shootForce = _settings.ShootForce;
     }
 
     private void Awake()
@@ -59,14 +66,14 @@ public class CannonController : MonoBehaviour
         _inputController.OnShotStarted += Shoot;
     }
 
-    public void ChangeShootDelay(float newShootDelayTimeSec)
+    private void ChangeShootDelay(float newShootDelayTimeSec)
     {
         _canShoot = false;
         _shootDelayTimeSec = newShootDelayTimeSec;
         _canShoot = true;
     }
 
-    private async void Shoot(Vector2 pointerPosition)
+    async private void Shoot(Vector2 pointerPosition)
     {
         if (!_canShoot)
         {
@@ -78,20 +85,20 @@ public class CannonController : MonoBehaviour
         Ray shootRay = _aimCamera.ScreenPointToRay(pointerPosition);
         if (Physics.Raycast(shootRay, out var raycastHit, Mathf.Infinity, _cameraRayCollisionMask))
         {
-            _cannonTrasfrom.LookAt(raycastHit.point);
+            _cannonTransform.LookAt(raycastHit.point);
         }
         else
         {
-            _cannonTrasfrom.LookAt(shootRay.origin + shootRay.direction * 100);
+            _cannonTransform.LookAt(shootRay.origin + shootRay.direction * 100);
         }
 
 
         _objectPooler.Spawn(_ballPrefab, _shootPointTransform.position, Quaternion.identity)
-            .GetComponent<Rigidbody>().AddForce(_cannonTrasfrom.forward * _shootForce, ForceMode.Impulse);
+            .GetComponent<Rigidbody>().AddForce(_cannonTransform.forward * _shootForce, ForceMode.Impulse);
 
         _objectPooler.Spawn(_shootVfxPrefab, _shootPointTransform.position, _shootPointTransform.rotation);
 
-        SoundManager.Instance.PlaySoundOnce(_shotSfx);
+        _soundManager.PlaySoundOnce(_shotSfx);
 
         PlayerPrefs.SetInt(PlayerPrefsKeys.ShotsFired.ToString(),
             PlayerPrefs.GetInt(PlayerPrefsKeys.ShotsFired.ToString(), 0) + 1);

@@ -1,22 +1,16 @@
 using UnityEngine;
 
 [DisallowMultipleComponent]
-public class SoundManager : MonoBehaviour
+public class SoundManager
 {
-    public static SoundManager Instance;
-
-    [SerializeField] private AudioSource _musicSource;
-    [SerializeField] private AudioSource _sfxSource;
-
-    private void Awake()
+    public SoundManager(AudioSource musicSource, AudioSource sfxSource)
     {
-        if (Instance != null)
-        {
-            Destroy(gameObject);
-        }
-
-        Instance = this;
+        _musicSource = musicSource;
+        _sfxSource = sfxSource;
     }
+
+    private AudioSource _musicSource;
+    private AudioSource _sfxSource;
 
     public void PlaySoundOnce(AudioClip clip) => PlaySoundOnce(clip, _sfxSource.volume);
 

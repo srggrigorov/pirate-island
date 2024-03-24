@@ -5,7 +5,7 @@ using Zenject;
 public abstract class PowerUp : MonoBehaviour
 {
     public Action OnActivated;
-    public abstract void Activate();
+    public IPowerUpEffect PowerUpEffect { get; protected set; }
 
     protected ObjectPooler _objectPooler;
 
@@ -14,4 +14,6 @@ public abstract class PowerUp : MonoBehaviour
     {
         _objectPooler = objectPooler;
     }
+
+    public abstract void Despawn();
 }

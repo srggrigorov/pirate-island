@@ -1,5 +1,6 @@
 # Pirate Island
-### Unity 2022.3.12f1
+### Unity 2022.3.18f1
+### Packages used: Addressables, Zenject, UniRx, UniTask, ShaderGraph
 ![Gameplay](Gameplay.gif)
 
 <hr>
@@ -20,8 +21,6 @@
 ## Todo Improvements
 
 - Player statistics are currently saved in PlayerPrefs for simplicity. For larger datasets, it is better to switch to JSON serialization.
-- Refraining from comparing prefabs in ObjectPooler is needed. This change will allow you to configure ObjectPoolSettings as Addressables.
-- I consider moving enemy and power-up data to ScriptableObjects for better organization.
 
 ## How to Play
 
@@ -49,8 +48,6 @@ Feel free to contribute, report issues, or suggest enhancements. Have fun playin
 ## Планы на улучшения
 
 - Статистика игрока в настоящее время сохраняется в PlayerPrefs для упрощения. Для более крупных данных следует перейти к сериализации в формате JSON.
-- Стоит избегать сравнения префабов в ObjectPooler. Это позволит настроить ObjectPoolSettings как Addressables.
-- Я Рассматриваю возможность перемещения данных противников и усилений в ScriptableObjects для лучшей организации.
 
 ## Как играть
 

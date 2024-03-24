@@ -27,6 +27,21 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b4dbc5995b83abf4b9fa5d4d13e4fb12
+    m_Address: ObjectPoolerSettings
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9885b8b747ee72d4ab9fe81e6eb0ca94
+    m_Address: PowerUpSpawnerSettings
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1562b315fab203d4989e3057acdbe2e7
+    m_Address: CannonSettings
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 9ff79abeac0f5f34a93a52874abbbc2a, type: 2}
   m_SchemaSet:

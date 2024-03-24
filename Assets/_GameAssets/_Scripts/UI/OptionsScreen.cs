@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 public class OptionsScreen : MenuOptionScreen
 {
@@ -8,6 +9,14 @@ public class OptionsScreen : MenuOptionScreen
     [SerializeField] private TMP_Text _musicToggleText;
     [SerializeField] private Toggle _soundToggle;
     [SerializeField] private TMP_Text _soundToggleText;
+
+    private SoundManager _soundManager;
+
+    [Inject]
+    public void Construct(SoundManager soundManager)
+    {
+        _soundManager = soundManager;
+    }
 
     protected override void OnEnable()
     {
@@ -18,13 +27,13 @@ public class OptionsScreen : MenuOptionScreen
 
     private void EnableMusic(bool value)
     {
-        SoundManager.Instance.EnableMusic(value);
+        _soundManager.EnableMusic(value);
         _musicToggleText.text = value ? "ON" : "OFF";
     }
 
     private void EnableSound(bool value)
     {
-        SoundManager.Instance.EnableSound(value);
+        _soundManager.EnableSound(value);
         _soundToggleText.text = value ? "ON" : "OFF";
     }
 
