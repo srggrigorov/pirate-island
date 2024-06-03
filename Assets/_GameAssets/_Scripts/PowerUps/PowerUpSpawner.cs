@@ -5,57 +5,78 @@ using Cysharp.Threading.Tasks;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class PowerUpSpawner : IDisposable
+public class PowerUpSpawner : IMonoBehaviourSpawnerService, IAutoSpawner, IDisposable
 {
-    private PowerUpSpawnerSettings _settings;
-    private ObjectPooler _objectPooler;
+    public event Action OnSpawned;
+    public event Action OnDespawned;
+
+    private readonly PowerUpSpawnerSettings _settings;
+    private readonly ObjectPooler _objectPooler;
     private readonly Collider _spawnAreaCollider;
-    
+    private readonly GameStateService _gameManager;
+
     private CancellationTokenSource _cancellationTokenSource;
     private PowerUp _lastSpawnPowerUp;
-    
-    public PowerUpSpawner(Collider spawnAreaCollider, ObjectPooler objectPooler, AssetsManager assetsManager)
+
+    public PowerUpSpawner(Collider spawnAreaCollider, ObjectPooler objectPooler, AssetsManager assetsManager, GameStateService gameManager)
     {
         _spawnAreaCollider = spawnAreaCollider;
         _objectPooler = objectPooler;
         _settings = assetsManager.GetModuleSettings<PowerUpSpawnerSettings>();
+        _gameManager = gameManager;
+        _gameManager.OnGameStarted += StartSpawning;
+        _gameManager.OnGameEnded += StopSpawning;
     }
 
     async private UniTask SetNextSpawn()
     {
         _cancellationTokenSource = new CancellationTokenSource();
-        try
-        {
-            await UniTask.Delay((int)(_settings.SpawnDelayTimeSec * 1000), DelayType.DeltaTime, 
-                                PlayerLoopTiming.Update, _cancellationTokenSource.Token);
-        }
-        catch (TaskCanceledException)
+        await UniTask.Delay((int)(_settings.SpawnDelayTimeSec * 1000), DelayType.DeltaTime,
+            PlayerLoopTiming.Update, _cancellationTokenSource.Token).SuppressCancellationThrow();
+
+        if (_cancellationTokenSource == null || _cancellationTokenSource.IsCancellationRequested)
         {
             return;
         }
 
-        Bounds spawnBounds = _spawnAreaCollider.bounds;
-        Vector3 _randomPointInSpawnArea = new Vector3
-        {
-            x = Random.Range(spawnBounds.min.x, spawnBounds.max.x),
-            y = Random.Range(spawnBounds.min.y, spawnBounds.max.y),
-            z = Random.Range(spawnBounds.min.z, spawnBounds.max.z)
-        };
-        _lastSpawnPowerUp = _objectPooler.Spawn(
-            _settings.PowerUpPrefabs[Random.Range(0, _settings.PowerUpPrefabs.Count)], _randomPointInSpawnArea,
-            Quaternion.identity).GetComponent<PowerUp>();
-        _lastSpawnPowerUp.OnActivated += StartSpawning;
+        
+        Spawn(_settings.PowerUpPrefabs[Random.Range(0, _settings.PowerUpPrefabs.Count)]);
+        ClearCancellationToken();
     }
+
 
     public void StartSpawning()
     {
-        _cancellationTokenSource = new CancellationTokenSource();
         SetNextSpawn().Forget();
     }
 
     //Made by Sergei Grigorov
 
     public void StopSpawning() => ClearCancellationToken();
+    public void Spawn(MonoBehaviour prefab)
+    {
+        _lastSpawnPowerUp = _objectPooler.Spawn(
+            prefab, _spawnAreaCollider.RandomPointInside(),
+            Quaternion.identity).GetComponent<PowerUp>();
+
+        _lastSpawnPowerUp.OnActivated += StartSpawning;
+        OnSpawned?.Invoke();
+    }
+    public void Despawn(MonoBehaviour instance)
+    {
+        PowerUp powerUp = instance as PowerUp;
+        if (!powerUp)
+        {
+            return;
+        }
+        powerUp.OnActivated -= StartSpawning;
+        _objectPooler.Despawn(powerUp);
+        OnDespawned?.Invoke();
+    }
+    public void DespawnAll()
+    {
+        Despawn(_lastSpawnPowerUp);
+    }
 
     private void ClearCancellationToken()
     {
@@ -66,5 +87,10 @@ public class PowerUpSpawner : IDisposable
     public void Dispose()
     {
         ClearCancellationToken();
+        if (_gameManager != null)
+        {
+            _gameManager.OnGameStarted -= StartSpawning;
+            _gameManager.OnGameEnded -= StopSpawning;
+        }
     }
 }

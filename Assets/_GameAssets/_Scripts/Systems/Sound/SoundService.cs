@@ -1,9 +1,8 @@
 using UnityEngine;
 
-[DisallowMultipleComponent]
-public class SoundManager
+public class SoundService : ISoundService
 {
-    public SoundManager(AudioSource musicSource, AudioSource sfxSource)
+    public SoundService(AudioSource musicSource, AudioSource sfxSource)
     {
         _musicSource = musicSource;
         _sfxSource = sfxSource;

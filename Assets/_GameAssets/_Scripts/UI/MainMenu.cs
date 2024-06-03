@@ -3,20 +3,24 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 public class MainMenu : MonoBehaviour
 {
-    [Header("Buttons")] [SerializeField] private Button _playButton;
+    [Header("Buttons")] [SerializeField]
+    private Button _playButton;
     [SerializeField] private Button _quitButton;
     [SerializeField] private List<MenuOptionButton> _menuOptionButtons;
 
-    [Space(5)] [SerializeField] private GameObject _menuCamera;
+    [Space(5)] [SerializeField]
+    private GameObject _menuCamera;
 
-    private GameManager _gameManager;
+    private GameStateService _gameStateService;
 
-    private void Awake()
+    [Inject]
+    private void Construct(GameStateService gameStateService)
     {
-        _gameManager = FindObjectOfType<GameManager>();
+        _gameStateService = gameStateService;
     }
 
     private void OnEnable()
@@ -38,7 +42,7 @@ public class MainMenu : MonoBehaviour
             optionButton.Button.onClick.RemoveAllListeners();
         }
     }
-    
+
     //Made by Sergei Grigorov
 
     private void HandlePlayButtonClick()
@@ -48,10 +52,10 @@ public class MainMenu : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    private async void StartGame()
+    async private void StartGame()
     {
         await Task.Delay(1000);
-        _gameManager.StartGame();
+        _gameStateService.StartGame();
     }
 
     private void OpenMenuOptionScreen(MenuOptionScreen screen)

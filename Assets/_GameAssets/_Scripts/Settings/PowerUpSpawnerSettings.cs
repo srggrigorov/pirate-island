@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using _GameAssets._Scripts.Data;
+using _GameAssets._Scripts.Settings;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "PowerUpSpawnerSettings", menuName = "Settings/PowerUp Spawner")]

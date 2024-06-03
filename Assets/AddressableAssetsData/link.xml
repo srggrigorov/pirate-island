@@ -1,10 +1,12 @@
 <linker>
   <assembly fullname="srggrigorov.PirateIsland, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-    <type fullname="_GameAssets._Scripts.Data.AssetsSettings" preserve="all" />
     <type fullname="_GameAssets._Scripts.Data.EnemySpawnerSettings" preserve="all" />
+    <type fullname="_GameAssets._Scripts.Settings.AssetsSettings" preserve="all" />
+    <type fullname="_GameAssets._Scripts.Settings.CannonSettings" preserve="all" />
+    <type fullname="_GameAssets._Scripts.Settings.DefeatSettings" preserve="all" />
     <type fullname="CannonBall" preserve="all" />
-    <type fullname="CannonSettings" preserve="all" />
     <type fullname="Enemy" preserve="all" />
+    <type fullname="EnemySpawnDelayProgressionSettings" preserve="all" />
     <type fullname="ObjectPoolerSettings" preserve="all" />
     <type fullname="PooledParticleSystem" preserve="all" />
     <type fullname="PowerUpKillAll" preserve="all" />
@@ -16,7 +18,7 @@
   </assembly>
   <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
-    <type fullname="UnityEngine.AddressableAssets.AssetReferenceT`1[_GameAssets._Scripts.Data.ModuleSettings]" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.AddressableAssets.AssetReferenceT`1[_GameAssets._Scripts.Settings.ModuleSettings]" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />

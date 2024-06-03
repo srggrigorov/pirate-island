@@ -1,5 +1,6 @@
 using System.Threading;
 using System.Threading.Tasks;
+using _GameAssets._Scripts.Settings;
 using UnityEngine;
 using Zenject;
 
@@ -18,7 +19,7 @@ public class CannonController : MonoBehaviour
     private float _shootForce;
     private float _shootDelayTimeSec;
     private bool _canShoot;
-    private SoundManager _soundManager;
+    private ISoundService _soundService;
     private CannonSettings _settings;
 
     public bool CanShoot
@@ -44,17 +45,27 @@ public class CannonController : MonoBehaviour
     private CancellationTokenSource _cancellationTokenSource;
     private ObjectPooler _objectPooler;
     private InputController _inputController;
+    private GameStateService _gameStateService;
+    private PlayerStatisticsStorageService _statisticsStorageService;
 
     [Inject]
-    private void Construct(ObjectPooler objectPooler, InputController inputController, SoundManager soundManager, AssetsManager assetsManager)
+    private void Construct(ObjectPooler objectPooler, InputController inputController, ISoundService soundService, AssetsManager assetsManager,
+        GameStateService gameStateService, PlayerStatisticsStorageService statisticsStorageService)
     {
         _objectPooler = objectPooler;
         _inputController = inputController;
-        _soundManager = soundManager;
+        _soundService = soundService;
         _settings = assetsManager.GetModuleSettings<CannonSettings>();
         _shootDelayTimeSec = _settings.ShootDelayTimeSec;
         _shootForce = _settings.ShootForce;
+        _gameStateService = gameStateService;
+        _gameStateService.OnGameStarted += EnableShooting;
+        _gameStateService.OnGameEnded += DisableShooting;
+        _statisticsStorageService = statisticsStorageService;
     }
+
+    private void EnableShooting() => CanShoot = true;
+    private void DisableShooting() => CanShoot = false;
 
     private void Awake()
     {
@@ -98,10 +109,9 @@ public class CannonController : MonoBehaviour
 
         _objectPooler.Spawn(_shootVfxPrefab, _shootPointTransform.position, _shootPointTransform.rotation);
 
-        _soundManager.PlaySoundOnce(_shotSfx);
+        _soundService.PlaySoundOnce(_shotSfx);
 
-        PlayerPrefs.SetInt(PlayerPrefsKeys.ShotsFired.ToString(),
-            PlayerPrefs.GetInt(PlayerPrefsKeys.ShotsFired.ToString(), 0) + 1);
+        _statisticsStorageService.StatisticsData.ShotsFired++;
 
         try
         {

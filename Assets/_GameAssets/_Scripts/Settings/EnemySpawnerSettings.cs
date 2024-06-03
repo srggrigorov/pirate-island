@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using _GameAssets._Scripts.Settings;
 using UnityEngine;
 
 namespace _GameAssets._Scripts.Data
@@ -11,14 +12,9 @@ namespace _GameAssets._Scripts.Data
         [field: SerializeField]
         public List<AudioClip> PiratesAudioClips { get; private set; }
 
-        [field: Space(10)]
-        [field: SerializeField] [field: Min(0)]
+        [field: Space(10), SerializeField, Min(0)]
         public float SpawnStartDelaySec { get; private set; }
-        [field: SerializeField] [field: Min(0)]
-        public float SpawnMinDelaySec { get; private set; }
-        [field: SerializeField] [field: Min(0)]
-        public float SpawnDelayChangeStepSec { get; private set; }
-        [field: SerializeField] [field: Min(0)]
+        [field: SerializeField, Min(0)]
         public float DespawnDelaySec { get; private set; }
     }
 }

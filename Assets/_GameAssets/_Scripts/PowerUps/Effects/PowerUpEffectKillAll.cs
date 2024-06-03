@@ -8,10 +8,10 @@ public class PowerUpEffectKillAll : IPowerUpEffect
         _enemySpawner = enemySpawner;
         _powerUp = powerUp;
     }
-    
+
     public void Activate()
     {
-        _enemySpawner.KillAllEnemies();
+        _enemySpawner.KillAll();
         _powerUp.OnActivated?.Invoke();
         _powerUp.OnActivated = null;
         _powerUp.Despawn();

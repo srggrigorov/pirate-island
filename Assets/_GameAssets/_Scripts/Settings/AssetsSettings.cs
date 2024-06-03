@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
-
-namespace _GameAssets._Scripts.Data
+namespace _GameAssets._Scripts.Settings
 {
     [CreateAssetMenu(fileName = "AssetsSettings", menuName = "Settings/Assets Settings", order = 999)]
     public class AssetsSettings : ScriptableObject

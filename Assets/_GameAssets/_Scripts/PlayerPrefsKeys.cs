@@ -1,6 +1,6 @@
 public enum PlayerPrefsKeys
 {
-    Record,
+    HighScore,
     ShotsFired,
     TotalEnemiesKilled
 }

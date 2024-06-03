@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UniRx;
@@ -8,6 +9,8 @@ using Random = UnityEngine.Random;
 
 public class Enemy : MonoBehaviour, IDamageable
 {
+    public event Action<Enemy> OnKilled;
+
     [SerializeField] private float _walkDistance;
     [SerializeField] private NavMeshAgent _navMeshAgent;
     [SerializeField] private Ragdoll _ragdoll;
@@ -95,7 +98,7 @@ public class Enemy : MonoBehaviour, IDamageable
     private IEnumerator StartDespawnDelay()
     {
         yield return _waitForDespawnDelay;
-        _enemySpawner.DespawnEnemy(this);
+        _enemySpawner.Despawn(this);
     }
 
 
@@ -138,6 +141,7 @@ public class Enemy : MonoBehaviour, IDamageable
     {
         StopCoroutine(SetRandomDestination());
         SetRagdollActive(true);
+        OnKilled?.Invoke(this);
         StartDespawnDelay().ToObservable().Take(1).Subscribe().AddTo(this);
     }
 

@@ -42,6 +42,16 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1fe3bab96cb0416459376d37dcc6afcd
+    m_Address: EnemySpawnDelayProgressionSettings
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a762b780b8da674cbfa03830ee4b389
+    m_Address: DefeatSettings
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 9ff79abeac0f5f34a93a52874abbbc2a, type: 2}
   m_SchemaSet:

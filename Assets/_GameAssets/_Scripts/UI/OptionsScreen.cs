@@ -10,12 +10,12 @@ public class OptionsScreen : MenuOptionScreen
     [SerializeField] private Toggle _soundToggle;
     [SerializeField] private TMP_Text _soundToggleText;
 
-    private SoundManager _soundManager;
+    private ISoundService _soundService;
 
     [Inject]
-    public void Construct(SoundManager soundManager)
+    public void Construct(ISoundService soundService)
     {
-        _soundManager = soundManager;
+        _soundService = soundService;
     }
 
     protected override void OnEnable()
@@ -27,13 +27,13 @@ public class OptionsScreen : MenuOptionScreen
 
     private void EnableMusic(bool value)
     {
-        _soundManager.EnableMusic(value);
+        _soundService.EnableMusic(value);
         _musicToggleText.text = value ? "ON" : "OFF";
     }
 
     private void EnableSound(bool value)
     {
-        _soundManager.EnableSound(value);
+        _soundService.EnableSound(value);
         _soundToggleText.text = value ? "ON" : "OFF";
     }
 
