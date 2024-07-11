@@ -18,9 +18,6 @@
   1. <span style = "color: #2A73C1">Blue</span> - speeds up your cannon shots.
   2. <span style="color: #C1452A">Red</span> - destroys all pirates on the island.
 
-## Todo Improvements
-
-- Player statistics are currently saved in PlayerPrefs for simplicity. For larger datasets, it is better to switch to JSON serialization.
 
 ## How to Play
 
@@ -45,9 +42,6 @@ Feel free to contribute, report issues, or suggest enhancements. Have fun playin
   1. <span style="color: #2A73C1">Синее</span> - ускоряет выстрелы из вашей пушки.
   2. <span style="color: #C1452A">Красное</span> - уничтожает всех пиратов на острове.
 
-## Планы на улучшения
-
-- Статистика игрока в настоящее время сохраняется в PlayerPrefs для упрощения. Для более крупных данных следует перейти к сериализации в формате JSON.
 
 ## Как играть
 
